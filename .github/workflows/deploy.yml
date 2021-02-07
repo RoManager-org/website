@@ -19,6 +19,3 @@ jobs:
      
       - name: Deploy website
         run: npm run deploy
-        env:
-          GIT_USER: github-actions
-          USE_SSH: false
