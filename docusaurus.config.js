@@ -2,7 +2,7 @@ module.exports = {
 	title: 'RoManager',
 	tagline: 'A free, feature rich and open source Discord-to-Roblox bot.',
 	url: 'https://jaydenn.dev',
-	baseUrl: '/RoManager',
+	baseUrl: 'RoManager/',
 	onBrokenLinks: 'warn',
 	onBrokenMarkdownLinks: 'warn',
 	favicon:
