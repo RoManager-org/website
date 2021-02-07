@@ -1,0 +1,63 @@
+module.exports = {
+	title: 'RoManager',
+	tagline: 'A free, feature rich and open source Discord-to-Roblox bot.',
+	url: 'https://romanager.jaydenn.dev',
+	baseUrl: '/',
+	onBrokenLinks: 'throw',
+	onBrokenMarkdownLinks: 'warn',
+	favicon:
+		'https://cdn.discordapp.com/avatars/738035113815834746/d0383aaa07e3dcc238aaa9cd88bded27.png',
+	organizationName: 'jaydensar', // Usually your GitHub org/user name.
+	projectName: 'RoManager', // Usually your repo name.
+	themeConfig: {
+		colorMode: {
+			defaultMode: 'dark',
+			respectPrefersColorScheme: false,
+			disableSwitch: true,
+		},
+		navbar: {
+			title: 'RoManager',
+			/* logo: {
+				src: 'img/logo.svg',
+			}, */
+			items: [
+				{
+					to: 'dashboard/',
+					activeBasePath: 'dashboard',
+					label: 'Dashboard',
+					position: 'right',
+				},
+				{
+					to: 'https://discord.gg/Dan5s9X9jP',
+					label: 'Support',
+					position: 'right',
+				},
+				{
+					to: 'docs/',
+					activeBasePath: 'docs',
+					label: 'Documentation',
+					position: 'right',
+				},
+			],
+		},
+		footer: {
+			copyright: `Copyright © ${new Date().getFullYear()} RoManager`,
+		},
+	},
+	presets: [
+		[
+			'@docusaurus/preset-classic',
+			{
+				docs: {
+					sidebarPath: require.resolve('./sidebars.js'),
+					// Please change this to your repo.
+					editUrl:
+						'https://github.com/jaydensar/RoManager/edit/website',
+				},
+				theme: {
+					customCss: require.resolve('./src/css/custom.css'),
+				},
+			},
+		],
+	],
+};

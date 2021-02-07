@@ -1,0 +1,78 @@
+/* stylelint-disable docusaurus/copyright-header */
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+@import url('https://jaydenn.dev/RoManager/css/quicksand.css');
+
+:root {
+	--ifm-background-color: #3b4252 !important;
+	--ifm-background-surface-color: #2e3440 !important;
+	--ifm-blockquote-color: #c1c1c1;
+	--ifm-footer-background-color: var(--ifm-background-surface-color) !important;
+	--ifm-hr-border-color: #4c566a;
+	--ifm-color-primary: #34cbfb;
+}
+
+h1, h2, h3, h3, p, a {
+	font-family: 'Quicksand', sans-serif;
+}
+
+.hero__title {
+	background: linear-gradient(to left top, rgb(147, 230, 255), #34cbfb);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
+.hero__subtitle {
+	color: white;
+}
+
+.navbar__link--active {
+	font-weight: bold;
+}
+
+.docusaurus-highlight-code-line {
+	background-color: rgb(72, 77, 91);
+	display: block;
+	margin: 0 calc(-1 * var(--ifm-pre-padding));
+	padding: 0 var(--ifm-pre-padding);
+}
+
+.gradient-btn {
+	border: none;
+	margin: 10px;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 20px;
+	transition: 0.5s;
+	background-size: 200% auto;
+	box-shadow: 0 0 20px #eee;
+	border-radius: 15px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+	cursor: pointer;
+}
+
+.gradient-btn a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.gradient-btn:hover {
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	color: #fff;
+	background-position: right center;
+	border-radius: 25px;
+}
+
+.getstarted-btn {
+	background-image: linear-gradient(to right, #00c3ff 0%, #00c3ff 100%);
+}
+
+.github-btn {
+	background-image: linear-gradient(to right, #494949 0%, #000000 100%);
+}
