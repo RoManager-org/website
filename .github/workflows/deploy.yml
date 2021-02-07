@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: git config user.name "GitHub Actions"
-      - run: git config user.email "actions@users.noreply.github.com"
+      - run: git config user.name "GitHub Actions" --global
+      - run: git config user.email "actions@users.noreply.github.com" --global
 
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.1.4
