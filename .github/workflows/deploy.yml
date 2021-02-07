@@ -1,0 +1,21 @@
+name: deploy website
+
+on:
+  push:
+    branches: [ website ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.1.4
+     
+      - name: Deploy website
+        run: npm run deploy
+        env:
+          GIT_USER: github-actions
+          USE_SSH: false
