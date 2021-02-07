@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - run: git config user.name "GitHub Actions"
+      - run: git config user.email "actions@users.noreply.github.com"
 
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.1.4
@@ -19,3 +21,6 @@ jobs:
      
       - name: Deploy website
         run: npm run deploy
+        env:
+          GIT_USER: actions
+          GIT_PASS: ${{ secrets.GITHUB_TOKEN }}
