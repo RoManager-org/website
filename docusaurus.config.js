@@ -3,7 +3,7 @@ module.exports = {
 	tagline: 'A free, feature rich and open source Discord-to-Roblox bot.',
 	url: 'https://romanager.jaydenn.dev',
 	baseUrl: '/',
-	onBrokenLinks: 'throw',
+	onBrokenLinks: 'warn',
 	onBrokenMarkdownLinks: 'warn',
 	favicon:
 		'https://cdn.discordapp.com/avatars/738035113815834746/d0383aaa07e3dcc238aaa9cd88bded27.png',
