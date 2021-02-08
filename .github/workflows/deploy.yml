@@ -48,7 +48,7 @@ jobs:
             ${{ runner.os }}-
 
       - name: Install pnpm
-        run: npm i -g pnpm
+        run: sudo npm i -g pnpm
 
       - name: Add key to allow access to repository
         env:
