@@ -44,25 +44,20 @@ module.exports = {
 			copyright: `Copyright © ${new Date().getFullYear()} RoManager`,
 		},
 	},
-	presets: [
+	themes: [
 		[
-			'@docusaurus/preset-classic',
+			'@docusaurus/theme-classic',
+			{ customCss: require.resolve('./src/css/custom.css') },
+		],
+	],
+	plugins: [
+		'@docusaurus/plugin-content-pages',
+		[
+			'@docusaurus/plugin-content-docs',
 			{
-				docs: {
-					sidebarPath: require.resolve('./sidebars.js'),
-					// Please change this to your repo.
-					editUrl:
-						'https://github.com/jaydensar/RoManager/edit/website',
-				},
-				blog: {
-					feedOptions: {
-						type: null,
-						// gotta do this otherwise the rss stuff still appears for some reason
-					},
-				},
-				theme: {
-					customCss: require.resolve('./src/css/custom.css'),
-				},
+				sidebarPath: require.resolve('./sidebars.js'),
+				// Please change this to your repo.
+				editUrl: 'https://github.com/jaydensar/RoManager/edit/website',
 			},
 		],
 	],
