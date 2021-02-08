@@ -21,23 +21,23 @@ module.exports = {
 				src: 'img/logo.svg',
 			}, */
 			items: [
-				{
+				/* {
 					to: 'dashboard/',
 					activeBasePath: 'dashboard',
 					label: 'Dashboard',
 					position: 'right',
-				},
+				}, */
 				{
 					to: 'https://discord.gg/Dan5s9X9jP',
 					label: 'Support',
 					position: 'right',
 				},
-				{
+				/* {
 					to: 'docs/',
 					activeBasePath: 'docs',
 					label: 'Documentation',
 					position: 'right',
-				},
+				}, */
 			],
 		},
 		footer: {

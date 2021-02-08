@@ -45,32 +45,33 @@ h1, h2, h3, h3, p, a {
 
 .gradient-btn {
 	border: none;
-	margin: 10px;
+	margin-right: 20px;
+	font-weight: 500;
 	font-family: 'Quicksand', sans-serif;
+	color: #fff;
 	font-size: 20px;
-	transition: 0.5s;
 	background-size: 200% auto;
-	box-shadow: 0 0 20px #eee;
 	border-radius: 15px;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-	cursor: pointer;
-}
-
-.gradient-btn a {
-	color: #fff;
-	text-decoration: none;
 }
 
 .gradient-btn:hover {
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-	color: #fff;
 	background-position: right center;
+	color: #fff;
 	border-radius: 25px;
 }
 
-.getstarted-btn {
-	background-image: linear-gradient(to right, #00c3ff 0%, #00c3ff 100%);
+.gradient-btn-svg {
+	width: 25px;
+	vertical-align: -5px;
+	margin-right: 10px;
+	color: white;
+}
+
+.discord-btn {
+	background-image: linear-gradient(to right, #7289DA 0%, #0037ff 100%);
 }
 
 .github-btn {

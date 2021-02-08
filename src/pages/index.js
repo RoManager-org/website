@@ -75,22 +75,30 @@ function Home() {
 					<div className={styles.buttons}>
 						<Link
 							className={clsx(
-								'gradient-btn getstarted-btn button button--outline button--secondary button--lg',
+								'discord-btn gradient-btn button',
 								styles.getStarted,
 							)}
-							to={useBaseUrl('docs/')}
+							to={
+								'https://discord.com/api/oauth2/authorize?client_id=738035113815834746&permissions=8&scope=bot'
+							}
 						>
-							Get Started
+							<img
+								src={'img/logo-discord.svg'}
+								className={clsx('gradient-btn-svg')}
+							/>
+							Add to Discord
 						</Link>
 						<Link
 							className={clsx(
-								'gradient-btn github-btn button button--outline button--secondary button--lg',
+								'github-btn gradient-btn button',
 								styles.getStarted,
 							)}
-							to={useBaseUrl(
-								'https://github.com/jaydensar/RoManager',
-							)}
+							to={'https://github.com/jaydensar/RoManager'}
 						>
+							<img
+								src={'img/logo-github.svg'}
+								className={clsx('gradient-btn-svg')}
+							/>
 							View on GitHub
 						</Link>
 					</div>
