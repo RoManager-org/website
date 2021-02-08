@@ -12,12 +12,19 @@
 	--ifm-background-color: #3b4252 !important;
 	--ifm-background-surface-color: #2e3440 !important;
 	--ifm-blockquote-color: #c1c1c1;
-	--ifm-footer-background-color: var(--ifm-background-surface-color) !important;
+	--ifm-footer-background-color: var(
+		--ifm-background-surface-color
+	) !important;
 	--ifm-hr-border-color: #4c566a;
 	--ifm-color-primary: #34cbfb;
 }
 
-h1, h2, h3, h3, p, a {
+h1,
+h2,
+h3,
+h3,
+p,
+a {
 	font-family: 'Quicksand', sans-serif;
 }
 
@@ -71,7 +78,7 @@ h1, h2, h3, h3, p, a {
 }
 
 .discord-btn {
-	background-image: linear-gradient(to right, #7289DA 0%, #0037ff 100%);
+	background-image: linear-gradient(to right, #7289da 0%, #0037ff 100%);
 }
 
 .github-btn {
