@@ -54,6 +54,12 @@ module.exports = {
 					editUrl:
 						'https://github.com/jaydensar/RoManager/edit/website',
 				},
+				blog: {
+					feedOptions: {
+						type: null,
+						// gotta do this otherwise the rss stuff still appears for some reason
+					},
+				},
 				theme: {
 					customCss: require.resolve('./src/css/custom.css'),
 				},
