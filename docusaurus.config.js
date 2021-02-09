@@ -7,8 +7,8 @@ module.exports = {
 	onBrokenMarkdownLinks: 'warn',
 	favicon:
 		'https://cdn.discordapp.com/avatars/738035113815834746/d0383aaa07e3dcc238aaa9cd88bded27.png',
-	organizationName: 'jaydensar', // Usually your GitHub org/user name.
-	projectName: 'RoManager', // Usually your repo name.
+	organizationName: 'Ro-Manager', // Usually your GitHub org/user name.
+	projectName: 'website', // Usually your repo name.
 	themeConfig: {
 		colorMode: {
 			defaultMode: 'dark',
