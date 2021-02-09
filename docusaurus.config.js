@@ -52,7 +52,7 @@ module.exports = {
 	],
 	plugins: [
 		'@docusaurus/plugin-content-pages',
-		/*[
+		/* [
 			'@docusaurus/plugin-content-docs',
 			{
 				sidebarPath: require.resolve('./sidebars.js'),
