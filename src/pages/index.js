@@ -93,7 +93,7 @@ function Home() {
 								'github-btn gradient-btn button',
 								styles.getStarted,
 							)}
-							to={'https://github.com/jaydensar/RoManager'}
+							to={'https://github.com/Ro-Manager'}
 						>
 							<img
 								src={'img/logo-github.svg'}
