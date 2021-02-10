@@ -65,13 +65,13 @@ function Home() {
 	const { siteConfig = {} } = context;
 	return (
 		<Layout
-			title={`${siteConfig.title}`}
+			title={'Home'}
 			description="A free, feature-rich and open-source Discord-to-Roblox bot."
 		>
 			<header className={clsx('hero hero--primary', styles.heroBanner)}>
 				<div className="container">
 					<h1 className="hero__title">{siteConfig.title}</h1>
-					<p className="hero__subtitle">{siteConfig.tagline}</p>
+					<h2 className="hero__subtitle">{siteConfig.tagline}</h2>
 					<div className={styles.buttons}>
 						<Link
 							className={clsx(
@@ -85,6 +85,7 @@ function Home() {
 							<img
 								src={'img/logo-discord.svg'}
 								className={clsx('gradient-btn-svg')}
+								alt=""
 							/>
 							Add to Discord
 						</Link>
@@ -98,6 +99,7 @@ function Home() {
 							<img
 								src={'img/logo-github.svg'}
 								className={clsx('gradient-btn-svg')}
+								alt=""
 							/>
 							View on GitHub
 						</Link>
