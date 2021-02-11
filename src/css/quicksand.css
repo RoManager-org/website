@@ -2,6 +2,7 @@
 @font-face {
 	font-family: 'Quicksand';
 	font-style: normal;
+	font-display: swap;
 	font-weight: 300;
 	src: local(''), url('/fonts/quicksand-v22-latin-300.woff2') format('woff2'),
 		/* Chrome 26+, Opera 23+, Firefox 39+ */
@@ -12,6 +13,7 @@
 @font-face {
 	font-family: 'Quicksand';
 	font-style: normal;
+	font-display: swap;
 	font-weight: 400;
 	src: local(''),
 		url('/fonts/quicksand-v22-latin-regular.woff2') format('woff2'),
@@ -23,6 +25,7 @@
 @font-face {
 	font-family: 'Quicksand';
 	font-style: normal;
+	font-display: swap;
 	font-weight: 700;
 	src: local(''), url('/fonts/quicksand-v22-latin-700.woff2') format('woff2'),
 		/* Chrome 26+, Opera 23+, Firefox 39+ */
