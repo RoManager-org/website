@@ -16,6 +16,7 @@ module.exports = {
 			disableSwitch: true,
 		},
 		navbar: {
+			hideOnScroll: true,
 			title: 'RoManager',
 			/* logo: {
 				src: 'img/logo.svg',
@@ -41,7 +42,7 @@ module.exports = {
 			],
 		},
 		footer: {
-			copyright: `Copyright © ${new Date().getFullYear()} RoManager`,
+			copyright: `Copyright © ${new Date().getFullYear()} jaydensar`,
 		},
 	},
 	themes: [
