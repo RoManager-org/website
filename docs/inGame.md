@@ -1,8 +1,8 @@
 ---
 id: inGame
 title: In-Game Setup
-sidebar_label: In-Game Commands
-slug: /
+sidebar_label: In-Game Setup
+slug: /guides/in-game-setup
 ---
 
 RoManager's in-game integration is an easy way to control your game from Discord, or via the (currently unfinished, but coming soon) API.
