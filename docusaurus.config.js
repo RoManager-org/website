@@ -29,7 +29,7 @@ module.exports = {
 					position: 'right',
 				}, */
 				{
-					to: 'https://discord.gg/Dan5s9X9jP',
+					to: 'https://discord.gg/DBNtntcBCh',
 					label: 'Support',
 					position: 'right',
 				},
