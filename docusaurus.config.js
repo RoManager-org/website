@@ -33,12 +33,12 @@ module.exports = {
 					label: 'Support',
 					position: 'right',
 				},
-				/* {
+				{
 					to: 'docs/',
 					activeBasePath: 'docs',
 					label: 'Documentation',
 					position: 'right',
-				}, */
+				},
 			],
 		},
 		footer: {
@@ -53,13 +53,13 @@ module.exports = {
 	],
 	plugins: [
 		'@docusaurus/plugin-content-pages',
-		/* [
+		[
 			'@docusaurus/plugin-content-docs',
 			{
 				sidebarPath: require.resolve('./sidebars.js'),
 				// Please change this to your repo.
 				editUrl: 'https://github.com/jaydensar/RoManager/edit/website',
 			},
-		], */
+		],
 	],
 };
