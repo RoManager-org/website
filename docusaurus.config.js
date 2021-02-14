@@ -10,6 +10,9 @@ module.exports = {
 	organizationName: 'RoManager-org', // Usually your GitHub org/user name.
 	projectName: 'website', // Usually your repo name.
 	themeConfig: {
+		prism: {
+			additionalLanguages: ['lua'],
+		},
 		colorMode: {
 			defaultMode: 'dark',
 			respectPrefersColorScheme: false,

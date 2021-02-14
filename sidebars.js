@@ -1,5 +1,5 @@
 module.exports = {
-	someSidebar: {
-		Guide: ['inGame'],
+	sidebar: {
+		Guides: ['inGame'],
 	},
 };
