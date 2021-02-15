@@ -25,7 +25,7 @@ To add the RoManager client, you need to open your game in Studio, and create a 
 Once you've done that, paste this code into the script.
 
 ```lua
-require(6393544901)({
+require(6398753986)({
 	INTEGRATION_KEY = 'your integration key here'
 })
 ```
