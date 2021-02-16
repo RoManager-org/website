@@ -1,6 +1,6 @@
 module.exports = {
 	title: 'RoManager',
-	tagline: 'A free, feature rich and open source Discord-to-Roblox bot.',
+	tagline: 'A free, feature-rich Discord-to-Roblox bot.',
 	url: 'https://jaydenn.dev',
 	baseUrl: '/',
 	onBrokenLinks: 'warn',
@@ -39,7 +39,7 @@ module.exports = {
 				{
 					to: 'docs/',
 					activeBasePath: 'docs',
-					label: 'Documentation',
+					label: 'Docs',
 					position: 'right',
 				},
 			],
@@ -61,7 +61,7 @@ module.exports = {
 			{
 				sidebarPath: require.resolve('./sidebars.js'),
 				// Please change this to your repo.
-				editUrl: 'https://github.com/jaydensar/RoManager/edit/website',
+				editUrl: 'https://github.com/RoManager-org/website/edit/main/',
 			},
 		],
 	],

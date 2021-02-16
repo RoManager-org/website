@@ -24,9 +24,8 @@ const features = [
 		description: (
 			<>
 				Kick, ban, shutdown the game, and send in-game announcements,
-				from Discord, effortlessly, with RoManager. We also plan to have
-				a plugin system, where you can easily add your own custom
-				in-game functions and commands.
+				from Discord, effortlessly, with RoManager. Or, use the plugin
+				system to create your own commands!
 			</>
 		),
 	},
@@ -72,10 +71,7 @@ function Home() {
 	const context = useDocusaurusContext();
 	const { siteConfig = {} } = context;
 	return (
-		<Layout
-			title={'Home'}
-			description="A free, feature-rich and open-source Discord-to-Roblox bot."
-		>
+		<Layout title={'Home'} description={siteConfig.tagline}>
 			<header className={clsx('hero hero--primary', styles.heroBanner)}>
 				<div className="container">
 					<h1 className="hero__title">{siteConfig.title}</h1>

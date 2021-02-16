@@ -1,6 +1,6 @@
 module.exports = {
 	sidebar: {
-		RoManager: ['introduction'],
+		RoManager: ['introduction', 'gettingStarted'],
 		Guides: ['inGame'],
 	},
 };
