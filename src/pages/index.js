@@ -19,17 +19,25 @@ const features = [
 		),
 	},
 	{
-		title: 'In-game Moderation',
+		title: 'In-Game Moderation',
 		// imageUrl: 'img/undraw_docusaurus_react.svg',
-		description: <>Kick, ban or send messages in-game through Discord.</>,
+		description: (
+			<>
+				Kick, ban, shutdown the game, and send in-game announcements,
+				from Discord, effortlessly, with RoManager. We also plan to have
+				a plugin system, where you can easily add your own custom
+				in-game functions and commands.
+			</>
+		),
 	},
 	{
 		title: 'Free, forever',
 		// imageUrl: 'img/undraw_docusaurus_tree.svg',
 		description: (
 			<>
-				RoManager will remain free, for as long as it exists. We have open sourced 
-				some components of the bot, and plan to go fully open source mid-2021.
+				RoManager will remain free, for as long as it exists. We have
+				open sourced some components of the bot, and plan to go fully
+				open source mid-2021.
 			</>
 		),
 	},
