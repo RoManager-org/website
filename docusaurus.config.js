@@ -33,7 +33,7 @@ module.exports = {
 				}, */
 				{
 					to: 'https://discord.gg/DBNtntcBCh',
-					label: 'Support',
+					label: 'Discord Server',
 					position: 'right',
 				},
 				{
