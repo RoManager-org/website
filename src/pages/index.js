@@ -19,19 +19,19 @@ const features = [
 		),
 	},
 	{
-		title: 'Automation',
-		// imageUrl: 'img/undraw_docusaurus_tree.svg',
-		description: (
-			<>
-				RoManager includes an XP system; rank members based on Discord
-				activity, in-game activity, or programmatically through the API.
-			</>
-		),
-	},
-	{
 		title: 'In-game Moderation',
 		// imageUrl: 'img/undraw_docusaurus_react.svg',
 		description: <>Kick, ban or send messages in-game through Discord.</>,
+	},
+	{
+		title: 'Free, forever',
+		// imageUrl: 'img/undraw_docusaurus_tree.svg',
+		description: (
+			<>
+				RoManager will remain free, for as long as it exists. We have open sourced 
+				some components of the bot, and plan to go fully open source mid-2021.
+			</>
+		),
 	},
 ];
 
