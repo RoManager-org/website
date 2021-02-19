@@ -32,14 +32,14 @@ module.exports = {
 					position: 'right',
 				}, */
 				{
-					to: 'https://discord.gg/DBNtntcBCh',
-					label: 'Discord Server',
-					position: 'right',
-				},
-				{
 					to: 'docs/',
 					activeBasePath: 'docs',
 					label: 'Docs',
+					position: 'right',
+				},
+				{
+					to: 'https://discord.gg/DBNtntcBCh',
+					label: 'Discord Server',
 					position: 'right',
 				},
 			],
