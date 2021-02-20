@@ -78,31 +78,25 @@ function Home() {
 					<h2 className="hero__subtitle">{siteConfig.tagline}</h2>
 					<div className={styles.buttons}>
 						<Link
-							className={clsx(
-								'discord-btn gradient-btn button',
-								styles.getStarted,
-							)}
+							className={'discord-btn gradient-btn button'}
 							to={
 								'https://discord.com/api/oauth2/authorize?client_id=738035113815834746&permissions=8&scope=bot'
 							}
 						>
 							<img
 								src={'img/logo-discord.svg'}
-								className={clsx('gradient-btn-svg')}
+								className={'gradient-btn-svg'}
 								alt=""
 							/>
 							Add to Discord
 						</Link>
 						<Link
-							className={clsx(
-								'github-btn gradient-btn button',
-								styles.getStarted,
-							)}
+							className={'github-btn gradient-btn button'}
 							to={'https://github.com/RoManager-org'}
 						>
 							<img
 								src={'img/logo-github.svg'}
-								className={clsx('gradient-btn-svg')}
+								className={'gradient-btn-svg'}
 								alt=""
 							/>
 							View on GitHub
