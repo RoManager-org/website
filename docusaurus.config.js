@@ -6,7 +6,7 @@ module.exports = {
 	onBrokenLinks: 'warn',
 	onBrokenMarkdownLinks: 'warn',
 	favicon:
-		'https://cdn.discordapp.com/avatars/738035113815834746/d0383aaa07e3dcc238aaa9cd88bded27.png',
+		'https://i.jaydenn.dev/rmt.png',
 	organizationName: 'RoManager-org', // Usually your GitHub org/user name.
 	projectName: 'website', // Usually your repo name.
 	themeConfig: {
@@ -21,9 +21,9 @@ module.exports = {
 		navbar: {
 			hideOnScroll: true,
 			title: 'RoManager',
-			/* logo: {
-				src: 'img/logo.svg',
-			}, */
+			logo: {
+				src: 'https://i.jaydenn.dev/rmt.png',
+			},
 			items: [
 				/* {
 					to: 'dashboard/',
