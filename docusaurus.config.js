@@ -5,8 +5,7 @@ module.exports = {
 	baseUrl: '/',
 	onBrokenLinks: 'warn',
 	onBrokenMarkdownLinks: 'warn',
-	favicon:
-		'https://i.jaydenn.dev/rmt.png',
+	favicon: 'https://i.jaydenn.dev/rmt.png',
 	organizationName: 'RoManager-org', // Usually your GitHub org/user name.
 	projectName: 'website', // Usually your repo name.
 	themeConfig: {
@@ -64,5 +63,13 @@ module.exports = {
 				editUrl: 'https://github.com/RoManager-org/website/edit/main/',
 			},
 		],
+	],
+	scripts: [
+		{
+			src: 'https://plausible.io/js/plausible.js',
+			async: true,
+			defer: true,
+			'data-domain': 'romanager.jaydenn.dev',
+		},
 	],
 };
