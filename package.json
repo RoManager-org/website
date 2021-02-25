@@ -24,7 +24,8 @@
 		"swizzle": "docusaurus swizzle",
 		"deploy": "docusaurus deploy",
 		"serve": "docusaurus serve",
-		"clear": "docusaurus clear"
+		"clear": "docusaurus clear",
+		"lint": "eslint ."
 	},
 	"browserslist": {
 		"production": [
