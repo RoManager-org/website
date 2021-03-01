@@ -50,7 +50,13 @@ module.exports = {
 	themes: [
 		[
 			'@docusaurus/theme-classic',
-			{ customCss: require.resolve('./src/css/custom.css') },
+			{
+				customCss: [
+					require.resolve('./src/css/custom.css'),
+					require.resolve('./src/css/quicksand.css'),
+					require.resolve('./src/css/nord.css'),
+				],
+			},
 		],
 	],
 	plugins: [
@@ -61,6 +67,15 @@ module.exports = {
 				sidebarPath: require.resolve('./sidebars.js'),
 				// Please change this to your repo.
 				editUrl: 'https://github.com/RoManager-org/website/edit/main/',
+			},
+		],
+		[
+			'@docusaurus/plugin-sitemap',
+			{
+				cacheTime: 600 * 1000, // 600 sec - cache purge period
+				changefreq: 'weekly',
+				priority: 0.5,
+				trailingSlash: false,
 			},
 		],
 	],
