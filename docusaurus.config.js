@@ -37,7 +37,7 @@ module.exports = {
 					position: 'right',
 				},
 				{
-					to: 'https://discord.gg/DBNtntcBCh',
+					to: 'https://jaydenn.dev/romanager-discord',
 					label: 'Discord Server',
 					position: 'right',
 				},
