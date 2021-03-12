@@ -7,6 +7,10 @@ slug: /guides/in-game-setup
 
 RoManager's in-game integration is an easy way to control your game from Discord, or via the API (coming soon).
 
+## Prerequisites
+* Your game must be either **Public**, or RoManager's bot account must be able to access it
+* HTTP requests must be on
+
 ## Getting your integration key
 Getting your game integration key is a very simple process.
 
