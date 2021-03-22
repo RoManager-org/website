@@ -3,18 +3,18 @@
 	"version": "0.0.1",
 	"private": true,
 	"dependencies": {
-		"@docusaurus/core": "^2.0.0-alpha.71",
-		"@docusaurus/plugin-content-docs": "^2.0.0-alpha.71",
-		"@docusaurus/plugin-content-pages": "^2.0.0-alpha.71",
-		"@docusaurus/plugin-sitemap": "^2.0.0-alpha.71",
-		"@docusaurus/theme-classic": "^2.0.0-alpha.71",
+		"@docusaurus/core": "^2.0.0-alpha.72",
+		"@docusaurus/plugin-content-docs": "^2.0.0-alpha.72",
+		"@docusaurus/plugin-content-pages": "^2.0.0-alpha.72",
+		"@docusaurus/plugin-sitemap": "^2.0.0-alpha.72",
+		"@docusaurus/theme-classic": "^2.0.0-alpha.72",
 		"@mdx-js/react": "^1.6.22",
 		"clsx": "^1.1.1",
-		"react": "^17.0.1",
-		"react-dom": "^17.0.1"
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2"
 	},
 	"devDependencies": {
-		"eslint": "^7.21.0",
+		"eslint": "^7.22.0",
 		"eslint-plugin-react": "^7.22.0",
 		"prettier": "^2.2.1"
 	},

@@ -80,10 +80,10 @@ module.exports = {
 	],
 	scripts: [
 		{
-			src: 'https://plausible.io/js/plausible.js',
+			src: 'https://science.jaydensar.net/umami.js',
 			async: true,
 			defer: true,
-			'data-domain': 'romanager.jaydenn.dev',
+			'data-website-id': 'df40744f-b077-419e-b239-654c4cbea06c',
 		},
 	],
 };
