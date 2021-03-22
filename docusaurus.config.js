@@ -83,7 +83,7 @@ module.exports = {
 			src: 'https://science.jaydensar.net/umami.js',
 			async: true,
 			defer: true,
-			'data-website-id': 'df40744f-b077-419e-b239-654c4cbea06c',
+			'data-website-id': '3d11690f-43db-47de-a895-d81345623235',
 		},
 	],
 };
