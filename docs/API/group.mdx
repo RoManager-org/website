@@ -1,0 +1,38 @@
+---
+id: group
+title: Group
+sidebar_label: Group
+slug: /api/group
+---
+
+Base URL: `https://api.romanager.jaydensar.net/v1`
+
+## Role
+`PATCH /role/:user`
+
+User parameter is a Roblox account ID.
+### Request body
+*Only one of these is required in the request body*.
+```json
+{
+	"roleId": // the target role's ID
+	"roleRank": // the target role's rank
+	"roleName": // the target role's name
+}
+```
+
+## Exile
+`DELETE /exile/:user`
+
+User parameter is a Roblox account ID.
+### Request body
+None.
+
+## Shout
+`PATCH /shout`
+### Request body
+```json
+{
+	"content": // the shout's content
+}
+```

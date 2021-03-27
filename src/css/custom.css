@@ -80,3 +80,120 @@ body {
 .github-btn {
 	background-image: linear-gradient(to right, #494949 0%, #000000 100%);
 }
+
+/* Whitney font face to match Discord */
+@font-face {
+	font-family: Whitney;
+	font-style: light;
+	font-weight: 300;
+	src: url(https://discord.com/assets/6c6374bad0b0b6d204d8d6dc4a18d820.woff)
+		format('woff');
+}
+@font-face {
+	font-family: Whitney;
+	font-style: normal;
+	font-weight: 500;
+	src: url(https://discord.com/assets/e8acd7d9bf6207f99350ca9f9e23b168.woff)
+		format('woff');
+}
+@font-face {
+	font-family: Whitney;
+	font-style: medium;
+	font-weight: 600;
+	src: url(https://discord.com/assets/3bdef1251a424500c1b3a78dea9b7e57.woff)
+		format('woff');
+}
+@font-face {
+	font-family: WhitneyMedium;
+	font-style: medium;
+	font-weight: 600;
+	src: url(https://discord.com/assets/be0060dafb7a0e31d2a1ca17c0708636.woff)
+		format('woff');
+}
+@font-face {
+	font-family: Whitney;
+	font-style: bold;
+	font-weight: 700;
+	src: url(https://discord.com/assets/8e12fb4f14d9c4592eb8ec9f22337b04.woff)
+		format('woff');
+}
+
+/* Setting default CSS for Discord messages */
+.discord-message,
+.discord-messages {
+	font-family: Whitney, Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.discord-message {
+	margin: 0 !important;
+	margin-top: 5px !important;
+}
+
+.discord-messages {
+	padding: 0 !important;
+	padding-bottom: 5px !important;
+}
+
+.discord-bot-tag {
+	color: #fff;
+	font-weight: 500;
+}
+
+.discord-codeblock {
+	background: #2f3136;
+	border: 1px solid #202225;
+	display: block;
+	margin-top: 5px;
+	border-radius: 4px;
+	color: #b9bbbe;
+	font-family: Consolas, Andale Mono WT, Andale Mono, Lucida Console,
+		Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono,
+		Liberation Mono, Nimbus Mono L, Monaco, Courier New, Courier, monospace;
+}
+
+.discord-author-username {
+	font-size: 1rem !important;
+}
+
+.discord-author-username:hover {
+	text-decoration: underline;
+}
+
+.discord-author-avatar img,
+.discord-author-username {
+	cursor: pointer;
+}
+
+.discord-author-avatar img:hover {
+	filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.16));
+}
+
+.discord-message-timestamp {
+	margin-left: 6px !important;
+	cursor: default;
+}
+
+.discord-embed {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.discord-embed-footer, .discord-embed-footer p {
+	margin: 0 !important;
+}
+
+.discord-embed-footer p, .discord-footer-image {
+	margin-top: 5px !important;
+}
+
+.discord-embed-media {
+	margin: 0 !important;
+}
+
+.discord-embed-grid {
+	padding: 0.5rem 1rem 0.75rem 0.75rem !important;
+}
+
+.discord-author-avatar {
+	margin-right: 12px !important;
+}

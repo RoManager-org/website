@@ -1,0 +1,39 @@
+---
+id: gettingStarted
+title: Getting Started
+sidebar_label: Getting Started
+slug: /api/getting-started
+---
+
+import {
+	DiscordMessages,
+	DiscordMessage,
+	DiscordMention,
+} from '@skyra/discord-components-react';
+
+RoManager provides a REST API that allow you to perform Roblox site actions via RoManager.
+
+Base URL: `https://api.romanager.jaydensar.net/v1`
+
+## Generating an API key
+
+To get an API key, run the `.api-key generate` command. You must be the group owner to run this command. A DM will be sent to you with the API key.
+
+<DiscordMessages>
+	<DiscordMessage
+		author="RoManager"
+		verified={true}
+		bot={true}
+		avatar="https://cdn.discordapp.com/avatars/738035113815834746/73b40ea86f581b9afec7baf83ac38a65.png"
+	>
+		API key successfully generated:
+		<br />
+		<code class="discord-codeblock">
+			Nzk4NzM1NzA4NzU1NDYwMTE4.2b9ad932988b0313d36db6d12c74af029fa85abd02b6df23
+		</code>
+	</DiscordMessage>
+</DiscordMessages>
+
+## Using the API
+
+You can see all API methods below, in the other categories. The API expects JSON data in the request body.

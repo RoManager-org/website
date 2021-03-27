@@ -9,13 +9,15 @@
 		"@docusaurus/plugin-sitemap": "^2.0.0-alpha.72",
 		"@docusaurus/theme-classic": "^2.0.0-alpha.72",
 		"@mdx-js/react": "^1.6.22",
+		"@skyra/discord-components-core": "^2.0.2",
+		"@skyra/discord-components-react": "^2.0.2",
 		"clsx": "^1.1.1",
 		"react": "^17.0.2",
 		"react-dom": "^17.0.2"
 	},
 	"devDependencies": {
-		"eslint": "^7.22.0",
-		"eslint-plugin-react": "^7.22.0",
+		"eslint": "^7.23.0",
+		"eslint-plugin-react": "^7.23.1",
 		"prettier": "^2.2.1"
 	},
 	"scripts": {

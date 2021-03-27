@@ -5,6 +5,12 @@ sidebar_label: In-Game Setup
 slug: /guides/in-game-setup
 ---
 
+import {
+	DiscordMessages,
+	DiscordMessage,
+	DiscordMention,
+} from '@skyra/discord-components-react';
+
 RoManager's in-game integration is an easy way to control your game from Discord, or via the API (coming soon).
 
 ## Prerequisites
@@ -16,7 +22,13 @@ Getting your game integration key is a very simple process.
 
 Run the `game-key` command, and RoManager will DM you a key. This will be used later, when adding the RoManager client to your game.
 
-![Result of the game-key command](https://i.jaydenn.dev/2021/02/alFzGIAav8b.png)
+<DiscordMessages>
+	<DiscordMessage author='RoManager' verified={true} bot={true} avatar='https://cdn.discordapp.com/avatars/738035113815834746/73b40ea86f581b9afec7baf83ac38a65.png'>
+		Game integration key for <b>Your Discord Server</b>:<br />
+		<code class="discord-codeblock">93db82d67b2a1d520128f36947aea2d9</code>
+	</DiscordMessage>
+</DiscordMessages>
+<br />
 
 :::info
 The key links the place to your **Discord server**, not the group, which means you can use the client for any place, not just group places.
