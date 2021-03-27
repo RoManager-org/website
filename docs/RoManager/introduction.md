@@ -6,7 +6,7 @@ slug: /
 ---
 RoManager is a free to use, feature-rich Discord-to-Roblox bot.
 
-[Add RoManager](https://discord.com/oauth2/authorize?client_id=738035113815834746&permissions=540142656&scope=bot%20applications.commands) | [Support Server](https://discord.gg/DBNtntcBCh)
+[Add RoManager](https://discord.com/oauth2/authorize?client_id=738035113815834746&permissions=540142656&scope=bot%20applications.commands) | [Support Server](https://romanager.jaydenn.dev/discord)
 ## Why should I use RoManager over other bots?
 ### Ease of use
 We strive to make RoManager as easy-to-use as possible. You can link RoManager to your group in under 5 minutes. We are also currently working on documenting all commands and making detailed guides for the more complex features.
