@@ -16,7 +16,7 @@ We made it really simple to link a group. Run the `.setup` command with your gro
 ![](https://i.jaydenn.dev/2021/02/OTGtGlh1Moc.png)
 
 :::info
-Anyone with Discord **Manage Server** permissions can run the `.setup` command, however only the group owner can link their group.
+Anyone with **Manage Server** permissions can run the `.setup` command, however only the group owner can link their group.
 :::
 
 ## Giving the bot group permissions

@@ -4,7 +4,7 @@ title: Privacy Policy
 sidebar_label: Privacy Policy
 slug: /privacy-policy
 ---
-**Updated 3/22/21** | **Effective 3/22/21**
+**Updated 4/9/21** | **Effective 3/22/21**
 
 This privacy policy states how we collect, store, and process personal data when you use **RoManager** (the "**Service**") or https://romanager.jaydenn.dev (the "**Site**").
 
@@ -24,8 +24,3 @@ We collect certain usage and device information when you use the Site. None of t
 * **Usage Information**: the pages you visit, which website you came from (the **referrer**), and the duration of the visit.
 
 * **Device Information**: the browser you are using, the operating system you are using, and what country you're visiting the Site from.
-
-## Third party data sharing
-Some of your data may be shared with the following third-parties to give insight on how the Site or the Service is being used.
-* [Sentry](https://sentry.io), for error tracking
-* [Cloudflare](https://cloudflare.com)
