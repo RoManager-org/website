@@ -71,8 +71,10 @@ Use the `permission-override view` sub-command, and RoManager will display all p
 	</DiscordMessage>
 	<DiscordMessage author='RoManager' verified={true} bot={true} avatar='https://cdn.discordapp.com/avatars/738035113815834746/73b40ea86f581b9afec7baf83ac38a65.png'>
 		<DiscordEmbed embedTitle='Group Permission Overrides' slot='embeds' color='#3498db'>
-			<DiscordEmbedField fieldTitle="Allow" inline><b>role</b>: <DiscordMention>Promote Permissions</DiscordMention></DiscordEmbedField>
-			<DiscordEmbedField fieldTitle="Deny" inline>None</DiscordEmbedField>
+			<DiscordEmbedFields slot="fields">
+				<DiscordEmbedField fieldTitle="Allow" inline><b>role</b>: <DiscordMention>Promote Permissions</DiscordMention></DiscordEmbedField>
+				<DiscordEmbedField fieldTitle="Deny" inline>None</DiscordEmbedField>
+			</DiscordEmbedFields>
 		</DiscordEmbed>
 	</DiscordMessage>
 </DiscordMessages>
