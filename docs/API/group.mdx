@@ -7,32 +7,55 @@ slug: /api/group
 
 Base URL: `https://api.romanager.jaydensar.net/v1`
 
-## Role
-`PATCH /role/:user`
+## Assign a role to a user
 
-User parameter is a Roblox account ID.
-### Request body
-*Only one of these parameters are required in the request body*.
+```http
+PATCH /role/:userId
+```
+*Only one of these parameters are required*
+| Parameter | Type     | Description            |
+| :-------- | :------- | :--------------------- |
+| `roleId`  | `number` | ID of role to assign   | 
+| `roleRank`| `number` | Rank of role to assign |
+| `roleName`| `string` | Name of role to assign |
+
+Request example
+```http
+PATCH https://api.romanager.jaydensar.net/v1/role/95158139
+```
 ```json
 {
-	"roleId": // the target role's ID
-	"roleRank": // the target role's rank
-	"roleName": // the target role's name
+    "roleRank": 254
 }
 ```
 
-## Exile
-`DELETE /exile/:user`
+## Exile a user
 
-User parameter is a Roblox account ID.
-### Request body
-None.
+```http
+DELETE /exile/:userId
+```
 
-## Shout
-`PATCH /shout`
-### Request body
+Request example
+```http
+DELETE https://api.romanager.jaydensar.net/v1/exile/95158139
+```
+
+## Set the group shout
+
+```http
+  PATCH /shout
+```
+*Only one of these parameters are required*
+| Parameter | Type     | Description             |
+| :-------- | :------- | :---------------------- |
+| `content` | `string` | The new shout's content | 
+
+Request example
+```http
+PATCH https://api.romanager.jaydensar.net/v1/role/95158139
+```
 ```json
 {
-	"content": // the shout's content
+    "content": "This is what will be set as the new shout!"
 }
 ```
