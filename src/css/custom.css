@@ -17,6 +17,7 @@
 	--ifm-hr-border-color: var(--nord3);
 	--ifm-color-primary: #34cbfb;
 	--ifm-code-background: var(--nord0);
+	--ifm-color-emphasis-100: var(--ifm-background-color) !important;
 }
 
 body {
@@ -178,11 +179,13 @@ body {
 	padding-bottom: 0;
 }
 
-.discord-embed-footer, .discord-embed-footer p {
+.discord-embed-footer,
+.discord-embed-footer p {
 	margin: 0 !important;
 }
 
-.discord-embed-footer p, .discord-footer-image {
+.discord-embed-footer p,
+.discord-footer-image {
 	margin-top: 5px !important;
 }
 

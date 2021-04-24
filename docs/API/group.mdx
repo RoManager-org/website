@@ -12,21 +12,40 @@ Base URL: `https://api.romanager.jaydensar.net/v1`
 ```http
 PATCH /role/:userId
 ```
-*Only one of these parameters are required*
-| Parameter | Type     | Description            |
-| :-------- | :------- | :--------------------- |
-| `roleId`  | `number` | ID of role to assign   | 
-| `roleRank`| `number` | Rank of role to assign |
-| `roleName`| `string` | Name of role to assign |
 
-Request example
-```http
-PATCH https://api.romanager.jaydensar.net/v1/role/95158139
-```
+_Only one of these parameters are required_
+
+| Parameter  | Type     | Description            |
+| :--------- | :------- | :--------------------- |
+| `roleId`   | `number` | ID of role to assign   |
+| `roleRank` | `number` | Rank of role to assign |
+| `roleName` | `string` | Name of role to assign |
+
+#### Request body example
+
 ```json
 {
-    "roleRank": 254
+	"roleRank": 254
 }
+```
+
+#### HttpService example
+
+```lua
+-- This example assigns the role with the rank 254 to the user jaydensar (95158139)
+local http = game:GetService('HttpService')
+
+http:RequestAsync({
+	Url = 'https://api.romanager.jaydensar.net/v1/role/95158139',
+	Body = http:JSONEncode({
+		roleRank = 254
+	}),
+	Method = 'PATCH',
+	Headers = {
+		['Content-Type'] = 'application/json',
+		['Authorization'] = 'API key here'
+	}
+})
 ```
 
 ## Exile a user
@@ -35,26 +54,55 @@ PATCH https://api.romanager.jaydensar.net/v1/role/95158139
 DELETE /exile/:userId
 ```
 
-Request example
-```http
-DELETE https://api.romanager.jaydensar.net/v1/exile/95158139
+#### HttpService example
+
+```lua
+-- This example exiles the user jaydensar (95158139)
+local http = game:GetService('HttpService')
+
+http:RequestAsync({
+	Url = 'https://api.romanager.jaydensar.net/v1/exile/95158139',
+	Method = 'DELETE',
+	Headers = {
+		['Content-Type'] = 'application/json',
+		['Authorization'] = 'API key here'
+	}
+})
 ```
 
 ## Set the group shout
 
 ```http
-  PATCH /shout
+PATCH /shout
 ```
+
 | Parameter | Type     | Description             |
 | :-------- | :------- | :---------------------- |
-| `content` | `string` | The new shout's content | 
+| `content` | `string` | The new shout's content |
 
-Request example
-```http
-PATCH https://api.romanager.jaydensar.net/v1/shout
-```
+#### Request body example
+
 ```json
 {
-    "content": "This is what will be set as the new shout!"
+	"content": "This is what will be set as the new shout!"
 }
+```
+
+#### HttpService example
+
+```lua
+-- This example sets the shout to "This is what will be set as the new shout!"
+local http = game:GetService('HttpService')
+
+http:RequestAsync({
+	Url = 'https://api.romanager.jaydensar.net/v1/shout',
+	Method = 'PATCH',
+	Body = http:JSONEncode({
+		content = 'This is what will be set as the new shout!'
+	}),
+	Headers = {
+		['Content-Type'] = 'application/json',
+		['Authorization'] = 'API key here'
+	}
+})
 ```

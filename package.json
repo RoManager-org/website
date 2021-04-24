@@ -3,11 +3,11 @@
 	"version": "0.0.1",
 	"private": true,
 	"dependencies": {
-		"@docusaurus/core": "^2.0.0-alpha.72",
-		"@docusaurus/plugin-content-docs": "^2.0.0-alpha.72",
-		"@docusaurus/plugin-content-pages": "^2.0.0-alpha.72",
-		"@docusaurus/plugin-sitemap": "^2.0.0-alpha.72",
-		"@docusaurus/theme-classic": "^2.0.0-alpha.72",
+		"@docusaurus/core": "^2.0.0-alpha.73",
+		"@docusaurus/plugin-content-docs": "^2.0.0-alpha.73",
+		"@docusaurus/plugin-content-pages": "^2.0.0-alpha.73",
+		"@docusaurus/plugin-sitemap": "^2.0.0-alpha.73",
+		"@docusaurus/theme-classic": "^2.0.0-alpha.73",
 		"@mdx-js/react": "^1.6.22",
 		"@skyra/discord-components-core": "^2.0.2",
 		"@skyra/discord-components-react": "^2.0.2",
@@ -16,7 +16,7 @@
 		"react-dom": "^17.0.2"
 	},
 	"devDependencies": {
-		"eslint": "^7.23.0",
+		"eslint": "^7.25.0",
 		"eslint-plugin-react": "^7.23.2",
 		"prettier": "^2.2.1"
 	},

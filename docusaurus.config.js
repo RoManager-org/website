@@ -10,6 +10,7 @@ module.exports = {
 	projectName: 'website', // Usually your repo name.
 	themeConfig: {
 		prism: {
+			theme: require('prism-react-renderer/themes/vsDark'),
 			additionalLanguages: ['lua'],
 		},
 		colorMode: {
