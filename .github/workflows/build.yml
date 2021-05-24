@@ -1,8 +1,7 @@
-name: website
+name: build
 
 on:
     push:
-    pull_request:
     workflow_dispatch:
 
 jobs:
@@ -17,7 +16,7 @@ jobs:
                   check-latest: true
 
             - name: Install dependencies
-              run: npm i
+              run: npm install
 
             - name: Build
               run: npm run build

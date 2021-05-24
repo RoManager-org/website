@@ -2,11 +2,10 @@ name: linter
 
 on:
     push:
-    pull_request:
     workflow_dispatch:
 
 jobs:
-    ESLint:
+    lint:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
@@ -17,7 +16,7 @@ jobs:
                   check-latest: true
 
             - name: Install dependencies
-              run: npm i
+              run: npm install
 
             - name: Lint
               run: npm run lint
