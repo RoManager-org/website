@@ -20,16 +20,21 @@ RoManager's game integration is **currently down**. This will **not** work for t
 :::
 
 ## Prerequisites
-* Your game must be either **Public**, or RoManager's bot account must be able to access it
-* HTTP requests must be on
+
+-   Your game must be either **Public**, or RoManager's bot account must be able to access it
+-   HTTP requests must be on
 
 ## Getting your integration key
-Getting your game integration key is a very simple process.
 
 Run the `game-key` command, and RoManager will DM you a key. This will be used later, when adding the RoManager client to your game.
 
 <DiscordMessages>
-	<DiscordMessage author='RoManager' verified={true} bot={true} avatar='https://cdn.discordapp.com/avatars/738035113815834746/73b40ea86f581b9afec7baf83ac38a65.png'>
+	<DiscordMessage
+		author="RoManager"
+		verified={true}
+		bot={true}
+		avatar="https://cdn.discordapp.com/avatars/738035113815834746/73b40ea86f581b9afec7baf83ac38a65.png"
+	>
 		Game integration key for <b>Your Discord Server</b>:<br />
 		<code class="discord-codeblock">93db82d67b2a1d520128f36947aea2d9</code>
 	</DiscordMessage>
@@ -37,11 +42,16 @@ Run the `game-key` command, and RoManager will DM you a key. This will be used l
 <br />
 
 :::info
-The key links the place to your **Discord server**, not the group, which means you can use the client for any place, not just group places.
+
+-   The key links the place to your **Discord server**, not the group, which means you can use the client for any place, not just group places.
+
+-   The RoManager game client is open-source. Check it out at https://github.com/RoManager-org/game-client.
+
 :::
 
 ## Adding the RoManager client
-To add the RoManager client, you need to open your game in Studio, and create a script in ServerScriptService.
+
+To add the RoManager client, you need to open your game in Studio, and create a script in `ServerScriptService`.
 
 Once you've done that, paste this code into the script.
 
@@ -50,10 +60,7 @@ require(6398753986)({
 	INTEGRATION_KEY = 'your integration key here'
 })
 ```
-Replace `your integration key here` with your integration key. Do not remove the quotes.
 
-:::info
-The RoManager game client is open-source. Check it out at https://github.com/RoManager-org/game-client.
-:::
+Replace `your integration key here` with your integration key. Do not remove the quotes.
 
 **You have successfully integrated your game with RoManager! The client does not work in Studio, however. Play your game and try it out!**

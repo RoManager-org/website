@@ -17,49 +17,77 @@ import {
 } from '@skyra/discord-components-react';
 
 ## Creating a permission override
+
 To create a permission override, you use the `permission-override` command.
 
 Use the `permission-override add` sub-command, and the prompts will guide you.
 
 <DiscordMessages>
-	<DiscordMessage>
-		.po add
-	</DiscordMessage>
-	<DiscordMessage author='RoManager' verified={true} bot={true} avatar='https://cdn.discordapp.com/avatars/738035113815834746/73b40ea86f581b9afec7baf83ac38a65.png'>
-		<DiscordEmbed embedTitle='Prompt' slot='embeds' color='#3498db'>
+	<DiscordMessage>.po add</DiscordMessage>
+	<DiscordMessage
+		author="RoManager"
+		verified={true}
+		bot={true}
+		avatar="https://cdn.discordapp.com/avatars/738035113815834746/73b40ea86f581b9afec7baf83ac38a65.png"
+	>
+		<DiscordEmbed embedTitle="Prompt" slot="embeds" color="#3498db">
 			What role would you like to override?
-			<p slot='footer'>This prompt will expire in 300 seconds. Say "cancel" to cancel.</p>
+			<p slot="footer">
+				This prompt will expire in 300 seconds. Say "cancel" to cancel.
+			</p>
 		</DiscordEmbed>
 	</DiscordMessage>
 	<DiscordMessage>
 		<DiscordMention>Promote Permissions</DiscordMention>
 	</DiscordMessage>
-	<DiscordMessage author='RoManager' verified={true} bot={true} avatar='https://cdn.discordapp.com/avatars/738035113815834746/73b40ea86f581b9afec7baf83ac38a65.png'>
-		<DiscordEmbed embedTitle='Prompt' slot='embeds' color='#3498db'>
+	<DiscordMessage
+		author="RoManager"
+		verified={true}
+		bot={true}
+		avatar="https://cdn.discordapp.com/avatars/738035113815834746/73b40ea86f581b9afec7baf83ac38a65.png"
+	>
+		<DiscordEmbed embedTitle="Prompt" slot="embeds" color="#3498db">
 			What command would you like to add an override for?
-			<p slot='footer'>This prompt will expire in 300 seconds. Say "cancel" to cancel.</p>
+			<p slot="footer">
+				This prompt will expire in 300 seconds. Say "cancel" to cancel.
+			</p>
 		</DiscordEmbed>
 	</DiscordMessage>
-	<DiscordMessage>
-		role
-	</DiscordMessage>
-	<DiscordMessage author='RoManager' verified={true} bot={true} avatar='https://cdn.discordapp.com/avatars/738035113815834746/73b40ea86f581b9afec7baf83ac38a65.png'>
-		<DiscordEmbed embedTitle='Prompt' slot='embeds' color='#3498db'>
+	<DiscordMessage>role</DiscordMessage>
+	<DiscordMessage
+		author="RoManager"
+		verified={true}
+		bot={true}
+		avatar="https://cdn.discordapp.com/avatars/738035113815834746/73b40ea86f581b9afec7baf83ac38a65.png"
+	>
+		<DiscordEmbed embedTitle="Prompt" slot="embeds" color="#3498db">
 			Allow or deny usage of the command? (allow/deny)
-			<p slot='footer'>This prompt will expire in 300 seconds. Say "cancel" to cancel.</p>
+			<p slot="footer">
+				This prompt will expire in 300 seconds. Say "cancel" to cancel.
+			</p>
 		</DiscordEmbed>
 	</DiscordMessage>
-	<DiscordMessage>
-		allow
-	</DiscordMessage>
-	<DiscordMessage author='RoManager' verified={true} bot={true} avatar='https://cdn.discordapp.com/avatars/738035113815834746/73b40ea86f581b9afec7baf83ac38a65.png'>
-		Added <b>role</b> command override for <b>Promote Permissions</b> (<b>allow</b>)
+	<DiscordMessage>allow</DiscordMessage>
+	<DiscordMessage
+		author="RoManager"
+		verified={true}
+		bot={true}
+		avatar="https://cdn.discordapp.com/avatars/738035113815834746/73b40ea86f581b9afec7baf83ac38a65.png"
+	>
+		Added <b>role</b> command override for <b>Promote Permissions</b> (
+		<b>allow</b>)
 	</DiscordMessage>
 </DiscordMessages>
 <br />
 
 :::tip
-Don't want to ping the role you're changing an override for? Just use the role's name.
+
+-   Don't want to ping the role you're changing an override for? Just use the role's name.
+
+-   Don't want to type `permission-override` every time? Just type in `po`.
+
+-   Instead of having to follow the prompts, you can put it in one message if you put the arguments in the same order.
+
 :::s
 
 ## Viewing permission overrides
@@ -67,14 +95,26 @@ Don't want to ping the role you're changing an override for? Just use the role's
 Use the `permission-override view` sub-command, and RoManager will display all permission overrides.
 
 <DiscordMessages>
-	<DiscordMessage>
-		.po view
-	</DiscordMessage>
-	<DiscordMessage author='RoManager' verified={true} bot={true} avatar='https://cdn.discordapp.com/avatars/738035113815834746/73b40ea86f581b9afec7baf83ac38a65.png'>
-		<DiscordEmbed embedTitle='Group Permission Overrides' slot='embeds' color='#3498db'>
+	<DiscordMessage>.po view</DiscordMessage>
+	<DiscordMessage
+		author="RoManager"
+		verified={true}
+		bot={true}
+		avatar="https://cdn.discordapp.com/avatars/738035113815834746/73b40ea86f581b9afec7baf83ac38a65.png"
+	>
+		<DiscordEmbed
+			embedTitle="Group Permission Overrides"
+			slot="embeds"
+			color="#3498db"
+		>
 			<DiscordEmbedFields slot="fields">
-				<DiscordEmbedField fieldTitle="Allow" inline><b>role</b>: <DiscordMention>Promote Permissions</DiscordMention></DiscordEmbedField>
-				<DiscordEmbedField fieldTitle="Deny" inline>None</DiscordEmbedField>
+				<DiscordEmbedField fieldTitle="Allow" inline>
+					<b>role</b>:{' '}
+					<DiscordMention>Promote Permissions</DiscordMention>
+				</DiscordEmbedField>
+				<DiscordEmbedField fieldTitle="Deny" inline>
+					None
+				</DiscordEmbedField>
 			</DiscordEmbedFields>
 		</DiscordEmbed>
 	</DiscordMessage>
@@ -86,28 +126,43 @@ Use the `permission-override view` sub-command, and RoManager will display all p
 Use the `permission-override remove` sub-command and follow the prompts.
 
 <DiscordMessages>
-	<DiscordMessage>
-		.po remove
-	</DiscordMessage>
-	<DiscordMessage author='RoManager' verified={true} bot={true} avatar='https://cdn.discordapp.com/avatars/738035113815834746/73b40ea86f581b9afec7baf83ac38a65.png'>
-		<DiscordEmbed embedTitle='Prompt' slot='embeds' color='#3498db'>
+	<DiscordMessage>.po remove</DiscordMessage>
+	<DiscordMessage
+		author="RoManager"
+		verified={true}
+		bot={true}
+		avatar="https://cdn.discordapp.com/avatars/738035113815834746/73b40ea86f581b9afec7baf83ac38a65.png"
+	>
+		<DiscordEmbed embedTitle="Prompt" slot="embeds" color="#3498db">
 			What command would you like to remove the overrides for?
-			<p slot='footer'>This prompt will expire in 300 seconds. Say "cancel" to cancel.</p>
+			<p slot="footer">
+				This prompt will expire in 300 seconds. Say "cancel" to cancel.
+			</p>
 		</DiscordEmbed>
 	</DiscordMessage>
-	<DiscordMessage>
-		role
-	</DiscordMessage>
-	<DiscordMessage author='RoManager' verified={true} bot={true} avatar='https://cdn.discordapp.com/avatars/738035113815834746/73b40ea86f581b9afec7baf83ac38a65.png'>
-		<DiscordEmbed embedTitle='Prompt' slot='embeds' color='#3498db'>
+	<DiscordMessage>role</DiscordMessage>
+	<DiscordMessage
+		author="RoManager"
+		verified={true}
+		bot={true}
+		avatar="https://cdn.discordapp.com/avatars/738035113815834746/73b40ea86f581b9afec7baf83ac38a65.png"
+	>
+		<DiscordEmbed embedTitle="Prompt" slot="embeds" color="#3498db">
 			What role would you like to edit the permissions of?
-			<p slot='footer'>This prompt will expire in 300 seconds. Say "cancel" to cancel.</p>
+			<p slot="footer">
+				This prompt will expire in 300 seconds. Say "cancel" to cancel.
+			</p>
 		</DiscordEmbed>
 	</DiscordMessage>
 	<DiscordMessage>
 		<DiscordMention>Promote Permissions</DiscordMention>
 	</DiscordMessage>
-	<DiscordMessage author='RoManager' verified={true} bot={true} avatar='https://cdn.discordapp.com/avatars/738035113815834746/73b40ea86f581b9afec7baf83ac38a65.png'>
+	<DiscordMessage
+		author="RoManager"
+		verified={true}
+		bot={true}
+		avatar="https://cdn.discordapp.com/avatars/738035113815834746/73b40ea86f581b9afec7baf83ac38a65.png"
+	>
 		Cleared <b>role</b> command overrides for <b>Promote Permissions</b>.
 	</DiscordMessage>
 </DiscordMessages>
