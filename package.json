@@ -7,7 +7,7 @@
 		"@docusaurus/plugin-content-docs": "^2.0.0-beta.0",
 		"@docusaurus/plugin-content-pages": "^2.0.0-beta.0",
 		"@docusaurus/plugin-sitemap": "^2.0.0-beta.0",
-		"@docusaurus/theme-classic": "^2.0.0-beta.0",
+		"@docusaurus/theme-classic": "^2.0.0-beta.1",
 		"@mdx-js/react": "^1.6.22",
 		"@skyra/discord-components-core": "^2.0.7",
 		"@skyra/discord-components-react": "^2.0.6",
