@@ -39,12 +39,14 @@ To generate an API key, run the `.api-key generate` command. You must be the gro
 All API methods are below, in the other categories. The API expects JSON data in the request body.
 
 ### Ratelimit
+
 The ratelimit is 60 requests per 60 seconds. For example you can send 60 requests in a 5 seconds, however you will not be able to send any more requests for 55 seconds.
 
 The following headers will be set so you know when you should retry your request:
+
 | Header                  | Description                                                                                 |
-|-------------------------|---------------------------------------------------------------------------------------------|
+| :---------------------- | :------------------------------------------------------------------------------------------ |
 | `Retry-After`           | time (in seconds) to wait until the next request can be sent, only present when ratelimited |
 | `X-RateLimit-Limit`     | request limit per minute                                                                    |
 | `X-RateLimit-Remaining` | number of requests left for the time window                                                 |
-| `X-RateLimit-Reset`     | amount of miliseconds before the requests left in the time window resets                        |
+| `X-RateLimit-Reset`     | amount of miliseconds before the requests left in the time window resets                    |

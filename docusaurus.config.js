@@ -8,6 +8,7 @@ module.exports = {
 	favicon: 'https://i.jaydenn.dev/rmt.png',
 	organizationName: 'RoManager-org', // Usually your GitHub org/user name.
 	projectName: 'website', // Usually your repo name.
+	trailingSlash: false,
 	themeConfig: {
 		prism: {
 			theme: require('prism-react-renderer/themes/vsDark'),
@@ -75,7 +76,6 @@ module.exports = {
 			{
 				changefreq: 'weekly',
 				priority: 0.5,
-				trailingSlash: false,
 			},
 		],
 	],
