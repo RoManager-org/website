@@ -9,7 +9,7 @@
 		"@docusaurus/plugin-sitemap": "^2.0.0-beta.3",
 		"@docusaurus/theme-classic": "^2.0.0-beta.3",
 		"@mdx-js/react": "^1.6.22",
-		"@skyra/discord-components-core": "^2.1.0",
+		"@skyra/discord-components-core": "^2.6.0",
 		"@skyra/discord-components-react": "^2.1.0",
 		"clsx": "^1.1.1",
 		"react": "^17.0.2",
