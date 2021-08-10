@@ -199,4 +199,5 @@ body {
 
 .discord-author-avatar {
 	margin-right: 12px !important;
+	transform: translateY(5px) !important;
 }

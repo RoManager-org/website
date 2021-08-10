@@ -1,0 +1,104 @@
+---
+id: customBotAccount
+title: Custom Bot Accounts
+sidebar_label: Custom Bot Accounts
+slug: /guides/custom-accounts
+---
+
+The custom bot account feature allows you to use your own account instead of the RoManager accounts.
+
+import {
+	DiscordMessages,
+	DiscordMessage,
+	DiscordMention,
+} from '@skyra/discord-components-react';
+
+## Getting your bot account cookie
+
+:::tip
+
+We recommend you make a dedicated Roblox account to use as your bot account.
+
+:::
+
+The `bot-account add` command only accepts a cookie, not username and password. Follow these steps to get your cookie (browser-specific):
+
+<details><summary>Chrome</summary>
+<p>
+
+1. Open an incognito window.
+
+2. Open https://roblox.com and log in with the bot account you want to use.
+
+3. Once logged in, click the padlock icon next to the URL, and click `Cookies`.
+
+![](https://i.jaydensar.net/2021/08/F3e0kP4y7i8a8y.png)
+
+4. Once this menu opens up, expand `roblox.com` => `Cookies` => `.ROBLOSECURITY`.
+
+![](https://i.jaydensar.net/2021/08/FPk6O0J0MNhNzn.png)
+
+5. Copy the entirety of `Content`.
+
+![](https://i.jaydensar.net/2021/08/xG1NO7Om6xXDAw.png)
+
+</p>
+</details>
+
+<details><summary>Firefox</summary>
+<p>
+
+1. Open an incognito window.
+
+2. Open https://roblox.com and log in with the bot account you want to use.
+
+3. Once logged in, right click anywhere on the page, then click `Inspect (Q)`. Then click the `Storage` tab.
+
+![](https://i.jaydensar.net/2021/08/W5KcGckDWfBmVr.png)
+
+4. On the sidebar, expand `Cookies` then `https://www.roblox.com`.
+
+![](https://i.jaydensar.net/2021/08/LE67mrFNRKajEJ.png)
+
+5. Double click on the `Value` column next to .ROBLOSECURITY, then copy it.
+
+![](https://i.jaydensar.net/2021/08/eWcpilPKic6gV4.png)
+
+</p>
+</details>
+
+## Adding your bot account to RoManager
+
+**Open DMs with RoManager as you cannot run these commands in a server.**
+
+Next, run this command:
+
+<DiscordMessages>
+	<DiscordMessage avatar="https://cdn.discordapp.com/embed/avatars/5.png">
+		.bot-account add (your cookie here, including the warning part)
+	</DiscordMessage>
+	<DiscordMessage
+		author="RoManager"
+		verified={true}
+		bot={true}
+		avatar="https://cdn.discordapp.com/avatars/738035113815834746/73b40ea86f581b9afec7baf83ac38a65.png"
+	>
+		<discord-reply
+			slot="reply"
+			avatar="https://cdn.discordapp.com/embed/avatars/5.png"
+		>
+			.bot-account add (your cookie here, including the warning part)
+		</discord-reply>
+		Successfully added bot account.
+	</DiscordMessage>
+</DiscordMessages>
+
+## Using your bot account in a server
+
+To link your bot account to a server, join the group you're going to set up if you haven't already, then run the `setup` command with the `--bot-account` flag, with the bot account username:
+
+<DiscordMessages>
+	<DiscordMessage avatar="https://cdn.discordapp.com/embed/avatars/5.png">
+		.setup (group name or id) --bot-account (bot account username or id)
+	</DiscordMessage>
+</DiscordMessages>
