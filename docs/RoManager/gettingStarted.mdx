@@ -5,6 +5,19 @@ sidebar_label: Getting Started
 slug: /getting-started
 ---
 
+Getting started with RoManager
+
+import {
+	DiscordMessages,
+	DiscordMessage,
+	DiscordMention,
+	DiscordEmbed,
+	DiscordEmbedField,
+	DiscordEmbedFields,
+	DiscordButton,
+	DiscordActionRow,
+} from '@skyra/discord-components-react';
+
 ## Adding the bot
 
 To get started with RoManager, you first need to add the bot to a Discord server.
@@ -15,7 +28,28 @@ To get started with RoManager, you first need to add the bot to a Discord server
 
 Run the `.setup` command with your group's name, id, or url.
 
-![Setup command image](https://i.jaydenn.dev/2021/02/OTGtGlh1Moc.png)
+<DiscordMessages>
+	<DiscordMessage>.setup your-group-name-or-id</DiscordMessage>
+	<DiscordMessage
+		author="RoManager"
+		verified={true}
+		bot={true}
+		avatar="https://cdn.discordapp.com/avatars/738035113815834746/73b40ea86f581b9afec7baf83ac38a65.png"
+	>
+		<DiscordEmbed embedTitle="Setup" slot="embeds" color="#5865F2" thumbnail="https://i.jaydensar.net/rmt.png">
+			<DiscordEmbedFields>
+				<DiscordEmbedField fieldTitle="ID" inline>12345678</DiscordEmbedField>
+				<DiscordEmbedField fieldTitle="Owner" inline>You</DiscordEmbedField>
+			</DiscordEmbedFields>
+		</DiscordEmbed>
+		<DiscordActionRow slot="components">
+			<DiscordButton type="primary">Confirm</DiscordButton>
+			<DiscordButton type="secondary">Cancel</DiscordButton>
+		</DiscordActionRow>
+	</DiscordMessage>
+</DiscordMessages>
+<br />
+
 
 :::info
 Anyone with **Manage Server** permissions can run the `.setup` command, however only the group owner can link their group.
@@ -25,11 +59,11 @@ Anyone with **Manage Server** permissions can run the `.setup` command, however 
 
 To start, go to your group, and open the `Configure Group` page.
 
-![](https://i.jaydenn.dev/2021/02/0zOidVmgEFv.png)
+![](https://i.jaydensar.net/2021/02/0zOidVmgEFv.png)
 
 Next, open the `Members` tab.
 
-![](https://i.jaydenn.dev/2021/02/mThre5mMAGE.png)
+![](https://i.jaydensar.net/2021/02/mThre5mMAGE.png)
 
 Then, give the bot a role that has permissions already, or grant it permissions, as shown below.
 
@@ -43,7 +77,7 @@ If the role you granted doesn't already have perms;
 
 Open the `Roles` tab, click on the role you assigned the bot, and give it the necessary permissions, as shown in the embed after you ran the `setup` command.
 
-![](https://i.jaydenn.dev/2021/02/pH2peApvgJp.png)
+![](https://i.jaydensar.net/2021/02/pH2peApvgJp.png)
 
 Then click the **Save** button when done.
 
