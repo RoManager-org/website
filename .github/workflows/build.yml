@@ -16,7 +16,7 @@ jobs:
                   check-latest: true
 
             - name: Install dependencies
-              run: npm install
+              run: npm ci
 
             - name: Build
               run: npm run build
