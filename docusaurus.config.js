@@ -5,10 +5,9 @@ module.exports = {
 	baseUrl: '/',
 	onBrokenLinks: 'warn',
 	onBrokenMarkdownLinks: 'warn',
-	favicon: 'https://i.jaydenn.dev/rmt.png',
+	favicon: 'https://i.jaydensar.net/rmt.png',
 	organizationName: 'RoManager-org', // Usually your GitHub org/user name.
 	projectName: 'website', // Usually your repo name.
-	trailingSlash: false,
 	themeConfig: {
 		prism: {
 			theme: require('prism-react-renderer/themes/vsDark'),
@@ -23,7 +22,7 @@ module.exports = {
 			hideOnScroll: true,
 			title: 'RoManager',
 			logo: {
-				src: 'https://i.jaydenn.dev/rmt.png',
+				src: 'https://i.jaydensar.net/rmt.png',
 			},
 			items: [
 				/* {
