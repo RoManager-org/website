@@ -29,7 +29,7 @@
 		"no-lonely-if": "error",
 		"no-var": "error",
 		"prefer-const": "error",
-		"prettier/prettier": "error",
+		"prettier/prettier": "warning",
 		"spaced-comment": "error",
 		"yoda": "error"
 	}
