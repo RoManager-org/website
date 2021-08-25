@@ -201,3 +201,7 @@ body {
 	margin-right: 12px !important;
 	transform: translateY(5px) !important;
 }
+
+.discord-action-row {
+	transform: translateY(-5px);
+}
