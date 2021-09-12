@@ -7,7 +7,7 @@ slug: /
 
 RoManager is a free, feature-rich Discord bot that allows you to manage your Roblox groups and games.
 
-[Add RoManager](https://discord.com/oauth2/authorize?client_id=738035113815834746&permissions=540142656&scope=bot%20applications.commands) | [Support Server](https://romanager.jaydenn.dev/discord)
+[Add RoManager](https://discord.com/oauth2/authorize?client_id=738035113815834746&permissions=540142656&scope=bot%20applications.commands) | [Support Server](https://romanager.jaydensar.net/discord)
 
 ## Why should I use RoManager over other bots?
 
@@ -17,7 +17,7 @@ All features are completely free to use
 
 ### Ease of use
 
-We made RoManager as easy to use as possible; setting up only takes 5 minutes, and every command guides you with prompts. If you need any additional help, have any questions or concerns, or want to keep up on updates to RoManager, join the [support server](https://romanager.jaydenn.dev/discord).
+We made RoManager as easy to use as possible; setting up only takes 5 minutes, and every command guides you with prompts. If you need any additional help, have any questions or concerns, or want to keep up on updates to RoManager, join the [support server](https://romanager.jaydensar.net/discord).
 
 ### Feature rich
 

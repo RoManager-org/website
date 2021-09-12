@@ -5,9 +5,9 @@ sidebar_label: Privacy Policy
 slug: /privacy-policy
 ---
 
-**Updated 5/29/21** | **Effective 3/22/21**
+**Updated 9/12/21** | **Effective 3/22/21**
 
-This privacy policy states how we collect, store, and process personal data when you use **RoManager** (the "**Service**") or https://romanager.jaydenn.dev (the "**Site**").
+This privacy policy states how we collect, store, and process personal data when you use **RoManager** (the "**Service**") or https://romanager.jaydensar.net (the "**Site**").
 
 ## Information you provide
 

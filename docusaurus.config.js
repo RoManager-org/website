@@ -5,7 +5,7 @@ module.exports = {
 	baseUrl: '/',
 	onBrokenLinks: 'warn',
 	onBrokenMarkdownLinks: 'warn',
-	favicon: 'https://i.jaydensar.net/rmt.png',
+	favicon: 'https://i.jaydensar.net/rmt-min.png',
 	organizationName: 'RoManager-org', // Usually your GitHub org/user name.
 	projectName: 'website', // Usually your repo name.
 	themeConfig: {
@@ -22,7 +22,7 @@ module.exports = {
 			hideOnScroll: true,
 			title: 'RoManager',
 			logo: {
-				src: 'https://i.jaydensar.net/rmt.png',
+				src: 'https://i.jaydensar.net/rmt-min.png',
 			},
 			items: [
 				/* {
