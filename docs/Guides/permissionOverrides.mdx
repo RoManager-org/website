@@ -14,7 +14,7 @@ import {
 	DiscordEmbed,
 	DiscordEmbedField,
 	DiscordEmbedFields,
-} from '@skyra/discord-components-react';
+} from "@skyra/discord-components-react";
 
 ## Creating a permission override
 
@@ -82,11 +82,11 @@ Use the `permission-override add` sub-command, and the prompts will guide you.
 
 :::tip
 
--   Don't want to ping the role you're changing an override for? Just use the role's name.
+- Don't want to ping the role you're changing an override for? Just use the role's name.
 
--   Don't want to type `permission-override` every time? Just type in `po`.
+- Don't want to type `permission-override` every time? Just type in `po`.
 
--   Instead of having to follow the prompts, you can put it in one message if you put the arguments in the same order.
+- Instead of having to follow the prompts, you can put it in one message if you put the arguments in the same order.
 
 :::s
 
@@ -109,12 +109,9 @@ Use the `permission-override view` sub-command, and RoManager will display all p
 		>
 			<DiscordEmbedFields slot="fields">
 				<DiscordEmbedField fieldTitle="Allow">
-					<b>role</b>:{' '}
-					<DiscordMention>Promote Permissions</DiscordMention>
+					<b>role</b>: <DiscordMention>Promote Permissions</DiscordMention>
 				</DiscordEmbedField>
-				<DiscordEmbedField fieldTitle="Deny">
-					None
-				</DiscordEmbedField>
+				<DiscordEmbedField fieldTitle="Deny">None</DiscordEmbedField>
 			</DiscordEmbedFields>
 		</DiscordEmbed>
 	</DiscordMessage>

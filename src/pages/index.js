@@ -1,42 +1,42 @@
-import clsx from 'clsx';
-import React from 'react';
-import Layout from '@theme/Layout';
-import PropTypes from 'prop-types';
-import Link from '@docusaurus/Link';
-import styles from './styles.module.css';
-import useBaseUrl from '@docusaurus/useBaseUrl';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import clsx from "clsx";
+import React from "react";
+import Layout from "@theme/Layout";
+import PropTypes from "prop-types";
+import Link from "@docusaurus/Link";
+import styles from "./styles.module.css";
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
 const features = [
 	{
-		title: 'Group Management',
+		title: "Group Management",
 		// imageUrl: 'img/undraw_docusaurus_mountain.svg',
 		description: (
 			<>
-				Quickly rank and exile members, manage group games, accept/deny
-				join requests, and more, straight from Discord.
+				Quickly rank and exile members, manage group games, accept/deny join
+				requests, and more, straight from Discord.
 			</>
 		),
 	},
 	{
-		title: 'In-Game Moderation',
+		title: "In-Game Moderation",
 		// imageUrl: 'img/undraw_docusaurus_react.svg',
 		description: (
 			<>
-				Kick, ban, shutdown the game, and send in-game announcements,
-				from Discord, effortlessly, with RoManager. Or, use the plugin
-				system to create your own commands!
+				Kick, ban, shutdown the game, and send in-game announcements, from
+				Discord, effortlessly, with RoManager. Or, use the plugin system to
+				create your own commands!
 			</>
 		),
 	},
 	{
-		title: 'Free, forever',
+		title: "Free, forever",
 		// imageUrl: 'img/undraw_docusaurus_tree.svg',
 		description: (
 			<>
-				RoManager will remain free, for as long as it exists. We have
-				open sourced some components of the bot, and plan to go fully
-				open source mid-2021.
+				RoManager will remain free, for as long as it exists. We have open
+				sourced some components of the bot, and plan to go fully open source
+				mid-2021.
 			</>
 		),
 	},
@@ -45,14 +45,10 @@ const features = [
 function Feature({ imageUrl, title, description }) {
 	const imgUrl = useBaseUrl(imageUrl);
 	return (
-		<div className={clsx('col col--4', styles.feature)}>
+		<div className={clsx("col col--4", styles.feature)}>
 			{imgUrl && (
 				<div className="text--center">
-					<img
-						className={styles.featureImage}
-						src={imgUrl}
-						alt={title}
-					/>
+					<img className={styles.featureImage} src={imgUrl} alt={title} />
 				</div>
 			)}
 			<h3>{title}</h3>
@@ -71,32 +67,32 @@ function Home() {
 	const context = useDocusaurusContext();
 	const { siteConfig = {} } = context;
 	return (
-		<Layout title={'Home'} description={siteConfig.tagline}>
-			<header className={clsx('hero hero--primary', styles.heroBanner)}>
+		<Layout title={"Home"} description={siteConfig.tagline}>
+			<header className={clsx("hero hero--primary", styles.heroBanner)}>
 				<div className="container">
 					<h1 className="hero__title">{siteConfig.title}</h1>
 					<h2 className="hero__subtitle">{siteConfig.tagline}</h2>
 					<div className={styles.buttons}>
 						<Link
-							className={'discord-btn gradient-btn button'}
+							className={"discord-btn gradient-btn button"}
 							to={
-								'https://discord.com/api/oauth2/authorize?client_id=738035113815834746&permissions=8&scope=bot'
+								"https://discord.com/api/oauth2/authorize?client_id=738035113815834746&permissions=8&scope=bot"
 							}
 						>
 							<img
-								src={'img/logo-discord.svg'}
-								className={'gradient-btn-svg'}
+								src={"img/logo-discord.svg"}
+								className={"gradient-btn-svg"}
 								alt=""
 							/>
 							Add to Discord
 						</Link>
 						<Link
-							className={'github-btn gradient-btn button'}
-							to={'https://github.com/RoManager-org'}
+							className={"github-btn gradient-btn button"}
+							to={"https://github.com/RoManager-org"}
 						>
 							<img
-								src={'img/logo-github.svg'}
-								className={'gradient-btn-svg'}
+								src={"img/logo-github.svg"}
+								className={"gradient-btn-svg"}
 								alt=""
 							/>
 							View on GitHub

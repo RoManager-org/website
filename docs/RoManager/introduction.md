@@ -31,28 +31,28 @@ We plan to go fully open-source by mid-2021, and we've already open-sourced some
 
 ### Group Management
 
--   Role group members
--   Exile group members
--   Change the group shout
--   Accept/deny join requests
+- Role group members
+- Exile group members
+- Change the group shout
+- Accept/deny join requests
 
 ### Logging
 
--   Forward Audit Logs to a channel
--   Log Join Requests in a channel
--   Log new group sales in a channel
--   Log Team Create sessions in a channel
+- Forward Audit Logs to a channel
+- Log Join Requests in a channel
+- Log new group sales in a channel
+- Log Team Create sessions in a channel
 
 ### Game Integration
 
--   Kick players
--   Ban players
--   Shutdown the game
--   Send announcements
--   Create plugins to do whatever you'd like
+- Kick players
+- Ban players
+- Shutdown the game
+- Send announcements
+- Create plugins to do whatever you'd like
 
 ### Miscellaneous
 
--   View Roblox profiles
--   View DevForum profiles
--   View Roblox groups
+- View Roblox profiles
+- View DevForum profiles
+- View Roblox groups

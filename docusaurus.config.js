@@ -1,28 +1,28 @@
 module.exports = {
-	title: 'RoManager',
-	tagline: 'A free, feature-rich Discord-to-Roblox bot.',
-	url: 'https://romanager.jaydensar.net',
-	baseUrl: '/',
-	onBrokenLinks: 'warn',
-	onBrokenMarkdownLinks: 'warn',
-	favicon: 'https://i.jaydensar.net/rmt-min.png',
-	organizationName: 'RoManager-org', // Usually your GitHub org/user name.
-	projectName: 'website', // Usually your repo name.
+	title: "RoManager",
+	tagline: "A free, feature-rich Discord-to-Roblox bot.",
+	url: "https://romanager.jaydensar.net",
+	baseUrl: "/",
+	onBrokenLinks: "warn",
+	onBrokenMarkdownLinks: "warn",
+	favicon: "https://i.jaydensar.net/rmt-min.png",
+	organizationName: "RoManager-org", // Usually your GitHub org/user name.
+	projectName: "website", // Usually your repo name.
 	themeConfig: {
 		prism: {
-			theme: require('prism-react-renderer/themes/vsDark'),
-			additionalLanguages: ['lua'],
+			theme: require("prism-react-renderer/themes/vsDark"),
+			additionalLanguages: ["lua"],
 		},
 		colorMode: {
-			defaultMode: 'dark',
+			defaultMode: "dark",
 			respectPrefersColorScheme: false,
 			disableSwitch: true,
 		},
 		navbar: {
 			hideOnScroll: true,
-			title: 'RoManager',
+			title: "RoManager",
 			logo: {
-				src: 'https://i.jaydensar.net/rmt-min.png',
+				src: "https://i.jaydensar.net/rmt-min.png",
 			},
 			items: [
 				/* {
@@ -32,15 +32,15 @@ module.exports = {
 					position: 'right',
 				}, */
 				{
-					to: 'docs/',
-					activeBasePath: 'docs',
-					label: 'Docs',
-					position: 'right',
+					to: "docs/",
+					activeBasePath: "docs",
+					label: "Docs",
+					position: "right",
 				},
 				{
-					to: 'https://romanager.jaydensar.net/discord',
-					label: 'Discord Server',
-					position: 'right',
+					to: "https://romanager.jaydensar.net/discord",
+					label: "Discord Server",
+					position: "right",
 				},
 			],
 		},
@@ -50,40 +50,40 @@ module.exports = {
 	},
 	themes: [
 		[
-			'@docusaurus/theme-classic',
+			"@docusaurus/theme-classic",
 			{
 				customCss: [
-					require.resolve('./src/css/custom.css'),
-					require.resolve('./src/css/quicksand.css'),
-					require.resolve('./src/css/nord.css'),
+					require.resolve("./src/css/custom.css"),
+					require.resolve("./src/css/quicksand.css"),
+					require.resolve("./src/css/nord.css"),
 				],
 			},
 		],
 	],
 	plugins: [
-		'@docusaurus/plugin-content-pages',
+		"@docusaurus/plugin-content-pages",
 		[
-			'@docusaurus/plugin-content-docs',
+			"@docusaurus/plugin-content-docs",
 			{
-				sidebarPath: require.resolve('./sidebars.js'),
+				sidebarPath: require.resolve("./sidebars.js"),
 				// Please change this to your repo.
-				editUrl: 'https://github.com/RoManager-org/website/edit/main/',
+				editUrl: "https://github.com/RoManager-org/website/edit/main/",
 			},
 		],
 		[
-			'@docusaurus/plugin-sitemap',
+			"@docusaurus/plugin-sitemap",
 			{
-				changefreq: 'weekly',
+				changefreq: "weekly",
 				priority: 0.5,
 			},
 		],
 	],
 	scripts: [
 		{
-			src: 'https://science.jaydensar.net/umami.js',
+			src: "https://science.jaydensar.net/umami.js",
 			async: true,
 			defer: true,
-			'data-website-id': '3d11690f-43db-47de-a895-d81345623235',
+			"data-website-id": "3d11690f-43db-47de-a895-d81345623235",
 		},
 	],
 };
