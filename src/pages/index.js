@@ -21,13 +21,13 @@ const features = [
 		),
 	},
 	{
-		title: "In-Game Moderation",
+		title: "Extend your Roblox Group",
 		// imageUrl: 'img/undraw_docusaurus_react.svg',
 		description: (
 			<>
-				Kick, ban, shutdown the game, and send in-game announcements, from
-				Discord, effortlessly, with RoManager. Or, use the plugin system to
-				create your own commands!
+				RoManager extends Roblox's own capabilities. We include a group ban
+				feature, where you can ban users from your group, as well as a rank
+				locking feature which prevents a user's rank from being changed.
 			</>
 		),
 	},
@@ -36,9 +36,9 @@ const features = [
 		// imageUrl: 'img/undraw_docusaurus_tree.svg',
 		description: (
 			<>
-				RoManager will remain free, for as long as it exists. We have open
-				sourced some components of the bot, and plan to go fully open source
-				mid-2021.
+				RoManager will remain free, for as long as it exists. Both free as in no
+				cost, and free as in open-source. You can check out our source-code
+				here: https://github.com/RoManager-org/romanager-oss.
 			</>
 		),
 	},

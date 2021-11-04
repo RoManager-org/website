@@ -25,7 +25,7 @@ RoManager has many features; you can see a full feature list below.
 
 ### Open source
 
-We plan to go fully open-source by mid-2021, and we've already open-sourced some components of RoManager.
+Our source code is available for you to audit and even host your own version of RoManager! Check it out here: https://github.com/RoManager-org/website.
 
 ## Feature List
 
@@ -36,20 +36,17 @@ We plan to go fully open-source by mid-2021, and we've already open-sourced some
 - Change the group shout
 - Accept/deny join requests
 
+### Group Automation
+
+- Ban users from your Roblox group (automatic exile)
+- Lock a user's rank, preventing it from being changed
+- Use the API to automate ranking, join requests, exiles and shouts
+
 ### Logging
 
 - Forward Audit Logs to a channel
 - Log Join Requests in a channel
 - Log new group sales in a channel
-- Log Team Create sessions in a channel
-
-### Game Integration
-
-- Kick players
-- Ban players
-- Shutdown the game
-- Send announcements
-- Create plugins to do whatever you'd like
 
 ### Miscellaneous
 
