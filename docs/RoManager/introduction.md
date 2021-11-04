@@ -25,7 +25,7 @@ RoManager has many features; you can see a full feature list below.
 
 ### Open source
 
-Our source code is available for you to audit and even host your own version of RoManager! Check it out here: https://github.com/RoManager-org/website.
+Our source code is available for you to audit and even host your own version of RoManager! Check it out here: https://github.com/RoManager-org/romanager-oss.
 
 ## Feature List
 
