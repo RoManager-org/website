@@ -20,8 +20,8 @@
 		"eslint:recommended",
 		"plugin:import/errors",
 		"plugin:import/warnings",
-		"plugin:react/recommended",
-		"plugin:promise/recommended",
+		// "plugin:react/recommended", - waiting for eslint 8 support
+		// "plugin:promise/recommended", - waiting for eslint 8 support 
 		"plugin:prettier/recommended"
 	],
 	"rules": {

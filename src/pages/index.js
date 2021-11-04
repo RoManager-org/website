@@ -1,11 +1,13 @@
-import clsx from "clsx";
-import React from "react";
-import Layout from "@theme/Layout";
-import PropTypes from "prop-types";
+/* eslint-disable no-unused-vars */
 import Link from "@docusaurus/Link";
-import styles from "./styles.module.css";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Layout from "@theme/Layout";
+import clsx from "clsx";
+import PropTypes from "prop-types";
+import React from "react";
+import styles from "./styles.module.css";
+/* eslint-enable no-unused-vars */
 
 const features = [
 	{
