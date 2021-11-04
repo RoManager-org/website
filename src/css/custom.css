@@ -9,16 +9,15 @@
 :root {
 	--ifm-background-color: var(--nord1) !important;
 	--ifm-background-surface-color: var(--nord0) !important;
+	--ifm-code-background: var(--nord0) !important;
+	--ifm-color-emphasis-100: var(--ifm-background-color) !important;
+
 	--ifm-blockquote-color: #c1c1c1;
-	--ifm-footer-background-color: var(--ifm-background-surface-color) !important;
+	--ifm-footer-background-color: var(--ifm-background-surface-color);
 	--ifm-hr-border-color: var(--nord3);
 	--ifm-color-primary: #34cbfb;
-	--ifm-code-background: var(--nord0);
-	--ifm-color-emphasis-100: var(--ifm-background-color) !important;
-}
-
-body {
-	font-family: "Quicksand", sans-serif !important;
+	--ifm-heading-font-family: "Quicksand", sans-serif;
+	--ifm-font-family-base: "Quicksand", sans-serif;
 }
 
 .hero__title {
