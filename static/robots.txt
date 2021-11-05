@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://romanager.jaydensar.net/sitemap.xml
+Sitemap: https://romanager.bot/sitemap.xml

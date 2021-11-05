@@ -1,10 +1,10 @@
 module.exports = {
 	title: "RoManager",
 	tagline: "A free, feature-rich Discord-to-Roblox bot.",
-	url: "https://romanager.jaydensar.net",
+	url: "https://romanager.bot",
 	baseUrl: "/",
-	onBrokenLinks: "warn",
-	onBrokenMarkdownLinks: "warn",
+	onBrokenLinks: "error",
+	onBrokenMarkdownLinks: "error",
 	favicon: "https://i.jaydensar.net/rmt-min.png",
 	organizationName: "RoManager-org", // Usually your GitHub org/user name.
 	projectName: "website", // Usually your repo name.
@@ -38,7 +38,7 @@ module.exports = {
 					position: "right",
 				},
 				{
-					to: "https://romanager.jaydensar.net/discord",
+					to: "https://romanager.bot/discord",
 					label: "Discord Server",
 					position: "right",
 				},

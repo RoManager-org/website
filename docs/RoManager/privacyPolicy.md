@@ -7,7 +7,7 @@ slug: /privacy-policy
 
 **Updated 9/12/21** | **Effective 3/22/21**
 
-This privacy policy states how we collect, store, and process personal data when you use **RoManager** (the "**Service**") or https://romanager.jaydensar.net (the "**Site**").
+This privacy policy states how we collect, store, and process personal data when you use **RoManager** (the "**Service**") or https://romanager.bot (the "**Site**").
 
 ## Information you provide
 
@@ -31,4 +31,4 @@ We collect certain usage and device information when you use the Site. None of t
 
 ## Data Deletion
 
-If you wish to have your data deleted, email [data-deletion+romanager@jaydensar.net](mailto:data-deletion+romanager@jaydensar.net).
+If you wish to have your data deleted, email [data-deletion@romanager.bot](mailto:data-deletion@romanager.bot).
