@@ -21,13 +21,13 @@ const features = [
 		),
 	},
 	{
-		title: "Extend your Roblox Group",
+		title: "Automation",
 		// imageUrl: 'img/undraw_docusaurus_react.svg',
 		description: (
 			<>
-				RoManager extends Roblox's own capabilities. We include a group ban
-				feature, where you can ban users from your group, as well as a rank
-				locking feature which prevents a user's rank from being changed.
+				RoManager extends Roblox's own features with automation. Automatically
+				exile members, effectively banning them, or lock their rank, preventing
+				it from being changed.
 			</>
 		),
 	},
