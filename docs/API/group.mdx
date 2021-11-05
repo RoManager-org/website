@@ -7,7 +7,7 @@ slug: /api/group
 
 Group endpoints in RoManager's API
 
-Base URL: `https://api.romanager.jaydensar.net/v1`
+Base URL: `https://api.romanager.bot/v1`
 
 ## Assign a role to a user
 
@@ -38,7 +38,7 @@ _Only one of these parameters are required_
 local http = game:GetService('HttpService')
 
 http:RequestAsync({
-	Url = 'https://api.romanager.jaydensar.net/v1/role/95158139',
+	Url = 'https://api.romanager.bot/v1/role/95158139',
 	Body = http:JSONEncode({
 		roleRank = 254
 	}),
@@ -63,7 +63,7 @@ DELETE /exile/:userId
 local http = game:GetService('HttpService')
 
 http:RequestAsync({
-	Url = 'https://api.romanager.jaydensar.net/v1/exile/95158139',
+	Url = 'https://api.romanager.bot/v1/exile/95158139',
 	Method = 'DELETE',
 	Headers = {
 		['Content-Type'] = 'application/json',
@@ -97,7 +97,7 @@ PATCH /shout
 local http = game:GetService('HttpService')
 
 http:RequestAsync({
-	Url = 'https://api.romanager.jaydensar.net/v1/shout',
+	Url = 'https://api.romanager.bot/v1/shout',
 	Method = 'PATCH',
 	Body = http:JSONEncode({
 		content = 'This is what will be set as the new shout!'
