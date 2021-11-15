@@ -25,9 +25,9 @@ const features = [
 		// imageUrl: 'img/undraw_docusaurus_react.svg',
 		description: (
 			<>
-				RoManager extends Roblox's own features with automation. Automatically
-				exile members, effectively banning them, or lock their rank, preventing
-				it from being changed.
+				RoManager extends Roblox&apos;s own features with automation.
+				Automatically exile members, effectively banning them, or lock their
+				rank, preventing it from being changed.
 			</>
 		),
 	},
