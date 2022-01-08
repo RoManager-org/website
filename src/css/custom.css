@@ -164,3 +164,15 @@
 .discord-action-row {
 	transform: translateY(-5px);
 }
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+}
+
+.captcha-frame {
+	width: 350px;
+	height: 300px;
+}

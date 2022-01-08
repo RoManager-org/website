@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import Link from "@docusaurus/Link";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
@@ -7,7 +6,6 @@ import clsx from "clsx";
 import PropTypes from "prop-types";
 import React from "react";
 import styles from "./styles.module.css";
-/* eslint-enable no-unused-vars */
 
 const features = [
 	{
