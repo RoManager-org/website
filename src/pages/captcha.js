@@ -1,6 +1,7 @@
 import Layout from "@theme/Layout";
 import PropTypes from "prop-types";
 import React from "react";
+import { URLSearchParams } from "url";
 
 function Home(props) {
 	const frameUrl = `https://captcha.romanager.bot/?taskId=${new URLSearchParams(
