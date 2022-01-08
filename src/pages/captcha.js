@@ -1,19 +1,25 @@
 import Layout from "@theme/Layout";
 import PropTypes from "prop-types";
 import React from "react";
-import { URLSearchParams } from "url";
+import BrowserOnly from "@docusaurus/BrowserOnly";
 
 function Home(props) {
-	const frameUrl = `https://captcha.romanager.bot/?taskId=${new URLSearchParams(
-		props.location.search
-	).get("taskId")}`;
 	return (
 		<Layout title={"Captcha"}>
 			<main className="center">
 				<div>
 					<h1>Setup</h1>
 					<p>Please complete the captcha to continue.</p>
-					<iframe src={frameUrl} className="captcha-frame"></iframe>
+					<BrowserOnly>
+						{() => (
+							<iframe
+								src={`https://captcha.romanager.bot/?taskId=${new URLSearchParams(
+									props.location
+								).get("taskId")}`}
+								className="captcha-frame"
+							></iframe>
+						)}
+					</BrowserOnly>
 				</div>
 			</main>
 		</Layout>
