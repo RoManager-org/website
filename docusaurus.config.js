@@ -80,7 +80,7 @@ module.exports = {
 	],
 	scripts: [
 		{
-			src: "https://science.jaydensar.net/umami.js",
+			src: "https://science.jaydensar.net/science.js",
 			async: true,
 			defer: true,
 			"data-website-id": "3d11690f-43db-47de-a895-d81345623235",
