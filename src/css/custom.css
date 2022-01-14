@@ -138,12 +138,11 @@
 	padding-bottom: 0;
 }
 
-.discord-embed-footer,
-.discord-embed-footer p {
-	margin: 0 !important;
+.discord-embed-footer {
+	color: #dcddde;
 }
 
-.discord-embed-footer p,
+.discord-embed-footer,
 .discord-footer-image {
 	margin-top: 5px !important;
 }

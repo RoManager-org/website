@@ -14,6 +14,8 @@ import {
 	DiscordEmbed,
 	DiscordEmbedField,
 	DiscordEmbedFields,
+	DiscordEmbedDescription,
+	DiscordEmbedFooter,
 } from "@skyra/discord-components-react";
 
 ## Creating a permission override
@@ -31,10 +33,12 @@ Use the `permission-override add` sub-command, and the prompts will guide you.
 		avatar="https://cdn.discordapp.com/avatars/738035113815834746/73b40ea86f581b9afec7baf83ac38a65.png"
 	>
 		<DiscordEmbed embedTitle="Prompt" slot="embeds" color="#3498db">
-			What role would you like to override?
-			<p slot="footer">
+			<DiscordEmbedDescription slot="description">
+				What role would you like to override?
+			</DiscordEmbedDescription>
+			<DiscordEmbedFooter slot="footer">
 				This prompt will expire in 300 seconds. Say "cancel" to cancel.
-			</p>
+			</DiscordEmbedFooter>
 		</DiscordEmbed>
 	</DiscordMessage>
 	<DiscordMessage>
@@ -47,10 +51,12 @@ Use the `permission-override add` sub-command, and the prompts will guide you.
 		avatar="https://cdn.discordapp.com/avatars/738035113815834746/73b40ea86f581b9afec7baf83ac38a65.png"
 	>
 		<DiscordEmbed embedTitle="Prompt" slot="embeds" color="#3498db">
-			What command would you like to add an override for?
-			<p slot="footer">
+			<DiscordEmbedDescription slot="description">
+				What command would you like to add an override for?
+			</DiscordEmbedDescription>
+			<DiscordEmbedFooter slot="footer">
 				This prompt will expire in 300 seconds. Say "cancel" to cancel.
-			</p>
+			</DiscordEmbedFooter>
 		</DiscordEmbed>
 	</DiscordMessage>
 	<DiscordMessage>role</DiscordMessage>
@@ -61,10 +67,12 @@ Use the `permission-override add` sub-command, and the prompts will guide you.
 		avatar="https://cdn.discordapp.com/avatars/738035113815834746/73b40ea86f581b9afec7baf83ac38a65.png"
 	>
 		<DiscordEmbed embedTitle="Prompt" slot="embeds" color="#3498db">
-			Allow or deny usage of the command? (allow/deny)
-			<p slot="footer">
+			<DiscordEmbedDescription slot="description">
+				Allow or deny usage of the command? (allow/deny)
+			</DiscordEmbedDescription>
+			<DiscordEmbedFooter slot="footer">
 				This prompt will expire in 300 seconds. Say "cancel" to cancel.
-			</p>
+			</DiscordEmbedFooter>
 		</DiscordEmbed>
 	</DiscordMessage>
 	<DiscordMessage>allow</DiscordMessage>
@@ -131,10 +139,12 @@ Use the `permission-override remove` sub-command and follow the prompts.
 		avatar="https://cdn.discordapp.com/avatars/738035113815834746/73b40ea86f581b9afec7baf83ac38a65.png"
 	>
 		<DiscordEmbed embedTitle="Prompt" slot="embeds" color="#3498db">
-			What command would you like to remove the overrides for?
-			<p slot="footer">
+			<DiscordEmbedDescription slot="description">
+				What command would you like to remove the overrides for?
+			</DiscordEmbedDescription>
+			<DiscordEmbedFooter slot="footer">
 				This prompt will expire in 300 seconds. Say "cancel" to cancel.
-			</p>
+			</DiscordEmbedFooter>
 		</DiscordEmbed>
 	</DiscordMessage>
 	<DiscordMessage>role</DiscordMessage>
@@ -145,10 +155,12 @@ Use the `permission-override remove` sub-command and follow the prompts.
 		avatar="https://cdn.discordapp.com/avatars/738035113815834746/73b40ea86f581b9afec7baf83ac38a65.png"
 	>
 		<DiscordEmbed embedTitle="Prompt" slot="embeds" color="#3498db">
-			What role would you like to edit the permissions of?
-			<p slot="footer">
+			<DiscordEmbedDescription slot="description">
+				What role would you like to edit the permissions of?
+			</DiscordEmbedDescription>
+			<DiscordEmbedFooter slot="footer">
 				This prompt will expire in 300 seconds. Say "cancel" to cancel.
-			</p>
+			</DiscordEmbedFooter>
 		</DiscordEmbed>
 	</DiscordMessage>
 	<DiscordMessage>
