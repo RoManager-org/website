@@ -9,17 +9,17 @@ function Captcha(props) {
 	);
 
 	useEffect(() => {
-			{() => {
-				const handler = (event: MessageEvent) => {
-					setDescription(event.data);
-				};
+		const handler = (event: MessageEvent) => {
+			if (event.data.captchaState) {
+				setDescription(event.data.description);
+			}
+		};
 
-				// eslint-disable-next-line no-undef
-				window.addEventListener("message", handler);
+		// eslint-disable-next-line no-undef
+		window.addEventListener("message", handler);
 
-				// eslint-disable-next-line no-undef
-				return () => window.removeEventListener("message", handler);
-			}}
+		//eslint-disable-next-line no-undef
+		return () => window.removeEventListener("message", handler);
 	}, []);
 
 	return (
