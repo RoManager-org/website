@@ -10,7 +10,7 @@ function Captcha(props) {
 
 	useEffect(() => {
 		const handler = (event: MessageEvent) => {
-			if (event.data.captchaState) {
+			if (event.data && event.data.captchaState) {
 				setDescription(event.data.description);
 			}
 		};
