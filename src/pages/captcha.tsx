@@ -1,9 +1,8 @@
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import Layout from "@theme/Layout";
-import PropTypes from "prop-types";
 import React, { useEffect, useState } from "react";
 
-function Captcha(props) {
+function Captcha(props: { location: { search: string } }) {
 	const [description, setDescription] = useState(
 		"Please complete the captcha to continue."
 	);
@@ -43,9 +42,5 @@ function Captcha(props) {
 		</Layout>
 	);
 }
-
-Captcha.propTypes = {
-	location: PropTypes.object,
-};
 
 export default Captcha;

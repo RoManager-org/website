@@ -1,16 +1,13 @@
 import Link from "@docusaurus/Link";
-import useBaseUrl from "@docusaurus/useBaseUrl";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import clsx from "clsx";
-import PropTypes from "prop-types";
 import React from "react";
 import styles from "./styles.module.css";
 
 const features = [
 	{
 		title: "Group Management",
-		// imageUrl: 'img/undraw_docusaurus_mountain.svg',
 		description: (
 			<>
 				Quickly rank and exile members, manage group games, accept/deny join
@@ -20,7 +17,6 @@ const features = [
 	},
 	{
 		title: "Automation",
-		// imageUrl: 'img/undraw_docusaurus_react.svg',
 		description: (
 			<>
 				RoManager extends Roblox&apos;s own features with automation.
@@ -31,7 +27,6 @@ const features = [
 	},
 	{
 		title: "Free, forever",
-		// imageUrl: 'img/undraw_docusaurus_tree.svg',
 		description: (
 			<>
 				RoManager will remain free, for as long as it exists. Both free as in no
@@ -42,30 +37,24 @@ const features = [
 	},
 ];
 
-function Feature({ imageUrl, title, description }) {
-	const imgUrl = useBaseUrl(imageUrl);
+function Feature({
+	title,
+	description,
+}: {
+	title: string;
+	description: JSX.Element;
+}) {
 	return (
 		<div className={clsx("col col--4", styles.feature)}>
-			{imgUrl && (
-				<div className="text--center">
-					<img className={styles.featureImage} src={imgUrl} alt={title} />
-				</div>
-			)}
 			<h3>{title}</h3>
 			<p>{description}</p>
 		</div>
 	);
 }
 
-Feature.propTypes = {
-	imageUrl: PropTypes.string,
-	title: PropTypes.string,
-	description: PropTypes.element,
-};
-
 function Home() {
 	const context = useDocusaurusContext();
-	const { siteConfig = {} } = context;
+	const { siteConfig } = context;
 	return (
 		<Layout title={"Home"} description={siteConfig.tagline}>
 			<header className={clsx("hero hero--primary", styles.heroBanner)}>
