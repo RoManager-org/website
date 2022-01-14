@@ -1,4 +1,5 @@
 import BrowserOnly from "@docusaurus/BrowserOnly";
+import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
 import Layout from "@theme/Layout";
 import React, { useEffect, useState } from "react";
 
@@ -8,17 +9,17 @@ function Captcha(props: { location: { search: string } }) {
 	);
 
 	useEffect(() => {
-		const handler = (event: MessageEvent) => {
-			if (event.data && event.data.captchaState) {
-				setDescription(event.data.description);
-			}
-		};
+		if (ExecutionEnvironment.canUseDOM) {
+			const handler = (event: MessageEvent) => {
+				if (event.data && event.data.captchaState) {
+					setDescription(event.data.description);
+				}
+			};
 
-		// eslint-disable-next-line no-undef
-		window.addEventListener("message", handler);
+			window.addEventListener("message", handler);
 
-		//eslint-disable-next-line no-undef
-		return () => window.removeEventListener("message", handler);
+			return () => window.removeEventListener("message", handler);
+		}
 	}, []);
 
 	return (
