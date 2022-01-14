@@ -29,32 +29,32 @@ const features = [
 		title: "Free, forever",
 		description: (
 			<>
-				RoManager will remain free, for as long as it exists. Both free as in no
-				cost, and free as in open-source. You can check out our source-code
-				here: https://github.com/RoManager-org/romanager-oss.
+				RoManager will remain free, forever. Both free as in free-to-use, and{" "}
+				<Link to="https://github.com/RoManager-org/romanager-oss">
+					free as in open-source
+				</Link>
+				, allowing you to host your own version.
 			</>
 		),
 	},
 ];
 
-function Feature({
+const Feature = ({
 	title,
 	description,
 }: {
 	title: string;
 	description: JSX.Element;
-}) {
-	return (
-		<div className={clsx("col col--4", styles.feature)}>
-			<h3>{title}</h3>
-			<p>{description}</p>
-		</div>
-	);
-}
+}) => (
+	<div className={clsx("col col--4", styles.feature)}>
+		<h3>{title}</h3>
+		<p>{description}</p>
+	</div>
+);
 
-function Home() {
-	const context = useDocusaurusContext();
-	const { siteConfig } = context;
+const Home = () => {
+	const { siteConfig } = useDocusaurusContext();
+
 	return (
 		<Layout title={"Home"} description={siteConfig.tagline}>
 			<header className={clsx("hero hero--primary", styles.heroBanner)}>
@@ -104,6 +104,6 @@ function Home() {
 			</main>
 		</Layout>
 	);
-}
+};
 
 export default Home;

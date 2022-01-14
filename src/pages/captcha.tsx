@@ -3,7 +3,7 @@ import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
 import Layout from "@theme/Layout";
 import React, { useEffect, useState } from "react";
 
-function Captcha(props: { location: { search: string } }) {
+const Captcha = (props: { location: { search: string } }) => {
 	const [description, setDescription] = useState(
 		"Please complete the captcha to continue."
 	);
@@ -42,6 +42,6 @@ function Captcha(props: { location: { search: string } }) {
 			</main>
 		</Layout>
 	);
-}
+};
 
 export default Captcha;
