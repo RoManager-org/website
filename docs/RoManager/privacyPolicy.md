@@ -7,7 +7,7 @@ slug: /privacy-policy
 
 **Updated 9/12/21** | **Effective 3/22/21**
 
-This privacy policy states how we collect, store, and process personal data when you use **RoManager** (the "**Service**") or https://romanager.bot (the "**Site**").
+This privacy policy states how we collect, store, and process personal data when you use **RoManager** (the "**Service**") or <https://romanager.bot> (the "**Site**").
 
 ## Information you provide
 

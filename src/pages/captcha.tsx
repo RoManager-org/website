@@ -1,5 +1,6 @@
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
+import Head from "@docusaurus/Head";
 import Layout from "@theme/Layout";
 import React, { useEffect, useState } from "react";
 
@@ -24,6 +25,9 @@ const Captcha = (props: { location: { search: string } }) => {
 
 	return (
 		<Layout title={"Captcha"}>
+			<Head>
+				<meta name="robots" content="noindex" />
+			</Head>
 			<main className="center">
 				<div>
 					<h1>Setup</h1>
