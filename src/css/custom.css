@@ -15,6 +15,7 @@
 	--ifm-blockquote-color: #c1c1c1;
 	--ifm-footer-background-color: var(--ifm-background-surface-color);
 	--ifm-hr-border-color: var(--nord3);
+	--ifm-table-head-background: var(--nord0);
 	--ifm-color-primary: #34cbfb;
 	--ifm-heading-font-family: "Quicksand", sans-serif;
 	--ifm-font-family-base: "Quicksand", sans-serif;

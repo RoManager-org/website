@@ -34,11 +34,11 @@ _Only one of these parameters are required_
 #### HttpService example
 
 ```lua
--- This example assigns the role with the rank 254 to the user jaydensar (95158139)
+-- This example assigns the role with the rank 254 to the user RoManager_Bot (1823986679)
 local http = game:GetService('HttpService')
 
 http:RequestAsync({
-	Url = 'https://api.romanager.bot/v1/role/95158139',
+	Url = 'https://api.romanager.bot/v1/role/1823986679',
 	Body = http:JSONEncode({
 		roleRank = 254
 	}),
@@ -59,11 +59,11 @@ DELETE /exile/:userId
 #### HttpService example
 
 ```lua
--- This example exiles the user jaydensar (95158139)
+-- This example exiles the user RoManager_Bot (id 1823986679)
 local http = game:GetService('HttpService')
 
 http:RequestAsync({
-	Url = 'https://api.romanager.bot/v1/exile/95158139',
+	Url = 'https://api.romanager.bot/v1/exile/1823986679',
 	Method = 'DELETE',
 	Headers = {
 		['Content-Type'] = 'application/json',

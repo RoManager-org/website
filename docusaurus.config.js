@@ -46,7 +46,7 @@ module.exports = {
 			],
 		},
 		footer: {
-			copyright: `Copyright © ${new Date().getFullYear()} jaydensar`,
+			copyright: `Copyright © ${new Date().getFullYear()} RoManager`,
 		},
 	},
 	themes: [
