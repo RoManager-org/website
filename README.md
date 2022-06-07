@@ -7,7 +7,7 @@ RoManager's website. Built with [Docusaurus 2](https://v2.docusaurus.io/).
 ## Installation
 
 ```
-npm install
+pnpm install
 ```
 
 Installs all dependancies.
@@ -15,7 +15,7 @@ Installs all dependancies.
 ## Local Development
 
 ```
-npm start
+pnpm start
 ```
 
 Starts a local development server.
