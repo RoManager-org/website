@@ -3,8 +3,8 @@ module.exports = {
 	tagline: "A free, feature-rich Discord-to-Roblox bot.",
 	url: "https://romanager.bot",
 	baseUrl: "/",
-	onBrokenLinks: "error",
-	onBrokenMarkdownLinks: "error",
+	onBrokenLinks: "throw",
+	onBrokenMarkdownLinks: "throw",
 	favicon: "https://i.jaydensar.net/rmt-min.png",
 	organizationName: "RoManager-org", // Usually your GitHub org/user name.
 	projectName: "website", // Usually your repo name.
