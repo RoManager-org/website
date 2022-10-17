@@ -46,7 +46,6 @@ Our source code is available for you to audit and even host your own version of 
 
 - Forward Audit Logs to a channel
 - Log Join Requests in a channel
-- Log new group sales in a channel
 
 ### Miscellaneous
 

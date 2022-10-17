@@ -16,6 +16,7 @@ import {
 	DiscordEmbedFields,
 	DiscordButton,
 	DiscordActionRow,
+	DiscordCommand,
 } from "@skyra/discord-components-react";
 
 ## Adding the bot
@@ -26,18 +27,16 @@ To get started with RoManager, you first need to add the bot to a Discord server
 
 ## Linking a Roblox group
 
-Run the `.setup` command with your group's name, id, or url.
+Run the `/setup` command with your group's name, id, or url.
 
 <DiscordMessages>
-	<DiscordMessage>.setup your-group-name-or-id</DiscordMessage>
-	<DiscordMessage
-		author="RoManager"
-		verified={true}
-		bot={true}
-		avatar="https://cdn.discordapp.com/avatars/738035113815834746/9c943bdaadc550fc4d7af38c6d2bc8ba.png"
-	>
+	<DiscordMessage profile="RoManager">
+		<DiscordCommand slot="reply" profile="you" command="/ping"></DiscordCommand>
+		Are you sure you want to link this group?
 		<DiscordEmbed
-			embedTitle="Setup"
+			authorName="Setup"
+			embedTitle="Your Group"
+			url="https://roblox.com/groups/9518878"
 			slot="embeds"
 			color="#5865F2"
 			thumbnail="https://i.jaydensar.net/rmt-min.png"
@@ -47,7 +46,7 @@ Run the `.setup` command with your group's name, id, or url.
 					12345678
 				</DiscordEmbedField>
 				<DiscordEmbedField fieldTitle="Owner" inline inline-index={2}>
-					You
+					@You (<b>12345678</b>)
 				</DiscordEmbedField>
 			</DiscordEmbedFields>
 		</DiscordEmbed>
@@ -60,7 +59,7 @@ Run the `.setup` command with your group's name, id, or url.
 <br />
 
 :::info
-Anyone with **Manage Server** permissions can run the `.setup` command, however only the group owner can link their group.
+Anyone with **Manage Server** permissions can run the `/setup` command, however only the group owner can link their group.
 :::
 
 ## Giving the bot group permissions
