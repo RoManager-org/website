@@ -87,4 +87,7 @@ module.exports = {
 			"data-website-id": "3d11690f-43db-47de-a895-d81345623235",
 		},
 	],
+	clientModules: [
+		require.resolve('./src/profiles.js'),
+	]
 };
