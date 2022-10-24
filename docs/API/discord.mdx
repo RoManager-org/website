@@ -1,0 +1,35 @@
+---
+id: discord
+title: Discord Endpoints
+sidebar_label: Discord Endpoints
+slug: /api/discord
+---
+
+Discord-related endpoints in RoManager's API
+
+Base URL: `https://api.romanager.bot/v1`
+
+
+## Fetch a Roblox user's Discord server roles
+
+```http
+GET /discord-roles/:userId
+```
+
+#### HttpService example
+
+```lua
+-- This example fetches the Discord roles of the Roblox user RoManager_Bot (id 1823986679), if there were
+-- someone in your Discord server verified with that account.
+local http = game:GetService('HttpService')
+
+local response = http:RequestAsync({
+	Url = 'https://api.romanager.bot/v1/discord-roles/1823986679',
+	Method = 'GET',
+	Headers = {
+		['Authorization'] = 'API key here'
+	}
+})
+
+local discordRoles = http:JSONDecode(response)
+```

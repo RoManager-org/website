@@ -1,0 +1,65 @@
+---
+id: serverBoosters
+title: Server Booster Perks
+sidebar_label: Server Booster Perks
+slug: /guides/server-booster-perks
+---
+
+Have you ever wanted to give in-game perks to someone if they were boosting your Discord server? With RoManager, you can easily do this using our API.
+
+Note that our API is not limited to just server boosting. You can get all roles of a member, allowing you to, for example, have donation perks in-game by giving a Donator role on Discord.
+
+## Prerequisites
+
+* You need to set up RoManager first, if you haven't already. Follow our [Getting Started](/docs/getting-started) guide.
+* Create an API key by running `/api-key generate`. You need to be the owner of the group you're generating the API key for.
+
+## Example Script
+
+This example script checks if a player has a role server booster when they join the game. Adjust it accordingly with your booster perks.
+
+:::info Note
+For this script to work properly, players that have boosted must be verified with RoManager. Encourage each user that boosts the server to run `/verify` with RoManager to get their perks in-game.
+:::
+
+```lua
+local Players = game:GetService("Players")
+
+local function onPlayerAdded(player)
+    if isBooster(player.UserId) then
+        -- give booster perks
+    end
+end
+
+
+-- you can copy this function anywhere you need to check if a player is a booster
+local function isBooster(playerId)
+    local HttpService = game:GetService("HttpService")
+
+    local response = HttpService:RequestAsync({
+	    Url = "https://api.romanager.bot/v1/discord-roles/" .. playerId,
+	    Method = "GET",
+	    Headers = {
+		    ["Authorization"] = "Insert your API key here"
+	    }
+    })
+
+    local discordRoles = HttpService:JSONDecode(response)
+
+    -- loop through all of the user's roles
+    for _, role in pairs(discordRoles) do
+        if role.name == "Server Booster" then
+            -- if any of the user's roles are Server Booster, the function returns true
+            return true
+        end
+    end
+
+    return false
+end
+
+Players.PlayerAdded:Connect(onPlayerAdded)
+```
+
+:::tip
+Need help? Join our [Discord server](https://discord.gg/cDJFRarTaY).
+:::
