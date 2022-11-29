@@ -11,8 +11,8 @@ Note that our API is not limited to just server boosting. You can get all roles 
 
 ## Prerequisites
 
-* You need to set up RoManager first, if you haven't already. Follow our [Getting Started](/docs/getting-started) guide.
-* Create an API key by running `/api-key generate`. You need to be the owner of the group you're generating the API key for.
+- You need to set up RoManager first, if you haven't already. Follow our [Getting Started](/docs/getting-started) guide.
+- Create an API key by running `/api-key generate`. You need to be the owner of the group you're generating the API key for.
 
 ## Example Script
 
@@ -44,7 +44,7 @@ local function isBooster(playerId)
 	    }
     })
 
-    local discordRoles = HttpService:JSONDecode(response)
+    local discordRoles = HttpService:JSONDecode(response.Body)
 
     -- loop through all of the user's roles
     for _, role in pairs(discordRoles) do
