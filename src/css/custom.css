@@ -22,7 +22,7 @@
 }
 
 .hero__title {
-	background: linear-gradient(to left top, rgb(147, 230, 255), #34cbfb);
+	background: linear-gradient(to right bottom, #3dc0f0, #4c8ef1);
 	background-clip: text;
 	-webkit-background-clip: text;
 	color: transparent;
@@ -30,6 +30,7 @@
 
 .hero__subtitle {
 	color: white;
+	font-weight: 100;
 }
 
 .navbar__link--active {
