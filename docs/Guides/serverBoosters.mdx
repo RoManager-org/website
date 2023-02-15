@@ -43,6 +43,10 @@ local function isBooster(playerId)
 		    ["Authorization"] = "Insert your API key here"
 	    }
     })
+    
+    if not response.Success then
+    	return false
+    end
 
     local discordRoles = HttpService:JSONDecode(response.Body)
 
