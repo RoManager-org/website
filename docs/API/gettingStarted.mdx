@@ -40,6 +40,8 @@ All API methods are below, in the other categories. The API expects JSON data in
 
 The ratelimit is 60 requests per 60 seconds. For example, you can send 60 requests in 5 seconds, however you will not be able to send any more requests for 55 seconds.
 
+Note: the ratelimit does not apply to the Discord roles endpoint.
+
 The following headers will be set so you know when you should retry your request:
 
 | Header                  | Description                                                                                 |
