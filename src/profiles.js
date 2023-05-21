@@ -7,7 +7,7 @@ if (ExecutionEnvironment.canUseDOM) {
 			RoManager: {
 				author: "RoManager",
 				avatar:
-					"https://cdn.discordapp.com/avatars/738035113815834746/9c943bdaadc550fc4d7af38c6d2bc8ba.png",
+					"https://cdn.discordapp.com/avatars/738035113815834746/1faadb9140b7d1d05b7ecd02f04a223f.webp",
 				bot: true,
 				verified: true,
 			},
