@@ -79,5 +79,10 @@ module.exports = {
 			},
 		],
 	],
+	scripts: [
+		{
+			src: "/_vercel/insights/script.js",
+		},
+	],
 	clientModules: [require.resolve("./src/profiles.js")],
 };
